@@ -1,10 +1,13 @@
 ---
 layout: post
 category : lessons
-tagline: "Supporting tagline"
-tags : [intro, beginner, jekyll, tutorial]
+tags : [intro, jekyll, tutorial]
 ---
 {% include JB/setup %}
+
+### Disclaimer
+
+This post came with [JekyllBootstrap](http://jekyllbootstrap.com/>), I will keep it as a reference.
 
 This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
 Directly following the intro we'll learn exactly _how_ Jekyll does what it does.
