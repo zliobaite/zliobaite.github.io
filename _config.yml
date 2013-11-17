@@ -10,10 +10,11 @@ pygments: true
 #
 title : Research and Stuff
 tagline: Orly Analytics
-author : Indr&#279; &#381;liobait&#279;
-email : zliobaite at gmail com
-github : zliobaite
-twitter : inzl2555
+author : 
+  name : Indr&#279; &#381;liobait&#279;
+  email : zliobaite at gmail com
+  github : zliobaite
+  twitter : inzl2555
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
