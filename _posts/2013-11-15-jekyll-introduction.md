@@ -405,11 +405,4 @@ You can also read the original documentation here: <https://github.com/mojombo/j
 I hope this paints a clearer picture of what Jekyll is doing and why it works the way it does.
 As noted, our main programming constraint is the fact that our API is limited to what is accessible via Liquid and Liquid only.
 
-Jekyll-bootstrap is intended to provide helper methods and strategies aimed at making it more intuitive and easier to work with Jekyll =)
-
-**Thank you** for reading this far.
-
-## Next Steps
-
-Please take a look at [{{ site.categories.api.first.title }}]({{ BASE_PATH }}{{ site.categories.api.first.url }})
-or jump right into [Usage]({{ BASE_PATH }}{{ site.categories.usage.first.url }}) if you'd like.
+Jekyll-bootstrap is intended to provide helper methods and strategies aimed at making it more intuitive and easier to work with Jekyll.
