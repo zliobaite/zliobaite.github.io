@@ -17,3 +17,5 @@ Yandex provides [congestion maps](maps.yandex.ru/traffic), that include traffic 
 **Learning, adaptation and prediction.** A new model is learned once per day. Different models are used for different times of day. New prediction are casted every 10 min taking new incoming GPS-traces into consideration. 
 
 **Computational complexity.** The size of the road graph (static) is about 100 GB. The size of historical data being stored is in tens of TB. Model update using one server would take about two weeks. They use a cluster of 30 servers to perform daily model updates.
+
+Update: [conference talk](http://tech.yandex.ru/events/yac/2012/talks/382/) about the solution (in Russian).
