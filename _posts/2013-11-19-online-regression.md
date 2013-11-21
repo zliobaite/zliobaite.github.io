@@ -16,7 +16,7 @@ MathJax.Hub.Config({
 </script>
 </head>
 
-Linear regression models assume that the relationship between $r$ input variables $X = (x_1,x_2,\ldots,x_r)^T$ and the target variable $y$ is linear in the form
+Linear regression models assume that the relationship between $r$ input variables $X = (x_1,x_2,\ldots,x_r)$ and the target variable $y$ is linear in the form
 $$
 y = b_1x_1 + b_2x_2 + \ldots + b_kx_k + e = XB + e,
 $$where the vector $B = (b_1, b_2,\ldots,b_r)^T$ contains the parameters of the linear model (regression coefficients), and $e$ is a random error.
@@ -35,11 +35,11 @@ All we need to keep in memory is the vector of regression coefficients $B$ (whic
 When at time $t$ observation $X_t$ with the corresponding  true target value $y_t$ becomes available, the model is updated as follows:
 $$
 \mathbf{S}_t^{-1} = \mathbf{S}_{t-1}^{-1}
-- \frac{\mathbf{S}_{t-1}^{-1}X_tX_t^T\mathbf{S}_{t-1}^{-1}}{1 + X_t^T\mathbf{S}_{t-1}^{-1}X_t},
+- \frac{\mathbf{S}_{t-1}^{-1}X_t^TX_t\mathbf{S}_{t-1}^{-1}}{1 + X_t\mathbf{S}_{t-1}^{-1}X_t^T},
 $$
 and
 $$
-\hat{B}_t = \hat{B}_{t-1} + \mathbf{S}_t^{-1}X_t(t_y  - X^T_t\hat{B}_{t-1}).
+\hat{B}_t = \hat{B}_{t-1} + \mathbf{S}_t^{-1}X_t^T(t_y  - X_t\hat{B}_{t-1}).
 $$
 More information can be found, for instance, in [M. Jordan's lecture notes](http://www.cs.berkeley.edu/~jordan/courses/294-fall98/readings/rls.ps). 
 
