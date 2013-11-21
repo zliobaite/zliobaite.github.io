@@ -6,7 +6,7 @@ title : Adaptive learning for traffic prediction by Yandex
 ---
 {% include JB/setup %}
 
-Yandex provides [congestion maps](maps.yandex.ru/traffic), that include traffic jam forecasts. They are using adaptive learning for that, predictive models are updated daily. Here is some more information about the [algorithmic solution](http://habrahabr.ru/company/yandex/blog/153631/) (in Russian). 
+Yandex provides [congestion maps](http://maps.yandex.ru/traffic), that include traffic jam forecasts. They are using adaptive learning for that, predictive models are updated daily. Here is some more information about the [algorithmic solution](http://habrahabr.ru/company/yandex/blog/153631/) (in Russian). 
 
 **Setting.** Road map is a graph. Crossings are nodes, streets are edges. Each edge has two attributes: length (fixed) and speed (varies over time). The goal is to predict speed in the future. 
 
@@ -18,4 +18,4 @@ Yandex provides [congestion maps](maps.yandex.ru/traffic), that include traffic 
 
 **Computational complexity.** The size of the road graph (static) is about 100 GB. The size of historical data being stored is in tens of TB. Model update using one server would take about two weeks. They use a cluster of 30 servers to perform daily model updates.
 
-Update: [conference talk](http://tech.yandex.ru/events/yac/2012/talks/382/) about the solution (in Russian).
+Update: [conference talk](http://tech.yandex.ru/events/yac/2012/talks/382/) about the solution (in Russian) and [interview](http://lenta.ru/articles/2012/12/18/yndx/).

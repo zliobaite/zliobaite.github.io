@@ -41,6 +41,6 @@ and
 $$
 \hat{B}_t = \hat{B}_{t-1} + \mathbf{S}_t^{-1}X_t(t_y  - X^T_t\hat{B}_{t-1}).
 $$
-More information can be found, for instance, in [M. Jordan's lecture notes](www.cs.berkeley.edu/~jordan/courses/294-fall98/readings/rls.ps). 
+More information can be found, for instance, in [M. Jordan's lecture notes](http://www.cs.berkeley.edu/~jordan/courses/294-fall98/readings/rls.ps). 
 
 This solution comes from the times, when computations had to be done by hand, so it is computationally efficient. There is even no need to invert the covariance matrix $\mathbf{S}$, which is a computationally intensive procedure, the matrix comes already inverted. 
