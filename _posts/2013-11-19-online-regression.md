@@ -22,7 +22,7 @@ y = b_1x_1 + b_2x_2 + \ldots + b_kx_k + e = XB + e,
 $$where the vector $B = (b_1, b_2,\ldots,b_r)^T$ contains the parameters of the linear model (regression coefficients), and $e$ is a random error.
 
 Simple and common way to estimate the regression parameters from data is to minimize the empirical mean squared error. We take a historical dataset of $n$ observations, where 
-$\mathbf{X}  = (X_1, X_2, \ldots, X_n)^T$ and
+$\mathbf{X}  = (X_1^T, X_2^T, \ldots, X_n^T)^T$ and
 $\mathbf{y} = (y_1,y_2,\ldots,y_n)^T$, and have a closed form solution, which is 
 $$
 \hat{B} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{y}.
@@ -39,7 +39,7 @@ $$
 $$
 and
 $$
-\hat{B}_t = \hat{B}_{t-1} + \mathbf{S}_t^{-1}X_t^T(t_y  - X_t\hat{B}_{t-1}).
+\hat{B}_t = \hat{B}_{t-1} + \mathbf{S}_t^{-1}X_t^T(y_t  - X_t\hat{B}_{t-1}).
 $$
 More information can be found, for instance, in [M. Jordan's lecture notes](http://www.cs.berkeley.edu/~jordan/courses/294-fall98/readings/rls.ps). 
 
