@@ -1,6 +1,6 @@
 ---
 title : How much energy does a mobile phone consume?
-category : energy
+category : applications
 layout: post
 tags : [mobile sensing,FUNF,battery]
 ---
