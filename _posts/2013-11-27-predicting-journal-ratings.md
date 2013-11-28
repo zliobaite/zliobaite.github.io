@@ -43,7 +43,7 @@ The mean cost weighted error of our classifier is 0.33, while random classifier 
 
 **What are the most informative title words?** Here are 20 most informative words and the probabilities of classes if these words are present. These probabilities are based on the fitted model. The first feature (#symbols) shows that the longer the title the higher the probability of low rating (-1 or 0). 
 
-	P(-1)	P(0)	P(1)	P(2)	p(3)
+		P(-1)	P(0)	P(1)	P(2)	p(3)
 	#symbols	61%	23%	2%	6%	8%
 	vision		25%	46%	9%	7%	13%
 	promotion	19%	11%	15%	15%	41%
@@ -55,7 +55,7 @@ The mean cost weighted error of our classifier is 0.33, while random classifier 
 	smart		66%	13%	3%	1%	9%
 	neural		42%	24%	3%	8%	22%
 	botany		69%	7%	3%	3%	18%
-	scandinavian17%	9%	11%	25%	39%
+	scandinavian	17%	9%	11%	25%	39%
 	limnology	15%	25%	2%	1%	31%
 	za		32%	2%	17%	16%	15%
 	mechanics	2%	7%	12%	19%	42%
