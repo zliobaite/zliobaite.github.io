@@ -12,7 +12,7 @@ I was wondering, if a title of an academic journal or conference somehow reflect
 
 **Data** comes from two sources. The first source is rating of publication venues produced by the Federation of Finnish Learned Societies, so called [JUFO ranking](http://www.tsv.fi/julkaisufoorumi/english.html). Here rating has four levels: 1 - basic, 2 - leading, 3 - top, and 0 - no rating. The second source of data is [a list of "predatory" academic journals](http://scholarlyoa.com/individual-journals/), compiled by Jeffrey Beall from the University of Colorado Denver. I add these "predatory" journals to the dataset and encode their rating as -1. 
 
-A complete dataset with rankings is [available here](http://). It consists of 22301 journal/conference titles. The distribution of ratings is: 1% (-1), 7% (0), 73% (1), 14% (2) and 5% (3).
+A complete dataset with rankings is [available here](https://github.com/zliobaite/predictJUFO/blob/master/JUFOdataset.csv). It consists of 22301 journal/conference titles. The distribution of ratings is: 1% (-1), 7% (0), 73% (1), 14% (2) and 5% (3).
 
 The dataset is split into training and testing subsets (50:50%) at random.
 
@@ -43,24 +43,24 @@ The mean cost weighted error of our classifier is 0.33, while random classifier 
 
 **What are the most informative title words?** Here are 20 most informative words and the probabilities of classes if these words are present. These probabilities are based on the fitted model. The first feature (#symbols) shows that the longer the title the higher the probability of low rating (-1 or 0). 
 
-					P(-1)	P(0)	P(1)	P(2)	p(3)
-	#symbols		61%		23%		2%		6%		8%
-	vision			25%		46%		9%		7%		13%
-	promotion		19%		11%		15%		15%		41%
-	av.symb./word	48%		27%		3%		9%		13%
-	#words			26%		15%		6%		12%		41%
-	disease			73%		15%		4%		3%		5%
-	nuclear			46%		18%		12%		9%		15%
-	transfer		75%		7%		4%		4%		1%
-	smart			66%		13%		3%		1%		9%
-	neural			42%		24%		3%		8%		22%
-	botany			69%		7%		3%		3%		18%
-	scandinavian	17%		9%		11%		25%		39%
-	limnology		15%		25%		2%		1%		31%
-	za				32%		2%		17%		16%		15%
-	mechanics		2%		7%		12%		19%		42%
-	ergonomics		9%		57%		6%		8%		21%
-	metal			44%		8%		3%		9%		35%
-	surgery			73%		7%		7%		3%		1%
-	mental			15%		51%		21%		9%		4%
-	hospitality		58%		1%		11%		13%		8%
+				P(-1)	P(0)	P(1)	P(2)	p(3)
+	#symbols	61%		23%		2%		6%		8%
+	vision		25%		46%		9%		7%		13%
+	promotion	19%		11%		15%		15%		41%
+	av.sym/word	48%		27%		3%		9%		13%
+	#words		26%		15%		6%		12%		41%
+	disease		73%		15%		4%		3%		5%
+	nuclear		46%		18%		12%		9%		15%
+	transfer	75%		7%		4%		4%		1%
+	smart		66%		13%		3%		1%		9%
+	neural		42%		24%		3%		8%		22%
+	botany		69%		7%		3%		3%		18%
+	scandinavian17%		9%		11%		25%		39%
+	limnology	15%		25%		2%		1%		31%
+	za			32%		2%		17%		16%		15%
+	mechanics	2%		7%		12%		19%		42%
+	ergonomics	9%		57%		6%		8%		21%
+	metal		44%		8%		3%		9%		35%
+	surgery		73%		7%		7%		3%		1%
+	mental		15%		51%		21%		9%		4%
+	hospitality	58%		1%		11%		13%		8%
