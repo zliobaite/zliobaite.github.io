@@ -2,7 +2,7 @@
 layout: post
 category : applications
 tags : [prediction, JUFO ranking, publications]
-title : Predicting rating of an academic journal based on its title
+title : Predicting ratings of academic journals based on titles
 ---
 {% include JB/setup %}
 
