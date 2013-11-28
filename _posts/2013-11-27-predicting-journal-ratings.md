@@ -43,24 +43,24 @@ The mean cost weighted error of our classifier is 0.33, while random classifier 
 
 **What are the most informative title words?** Here are 20 most informative words and the probabilities of classes if these words are present. These probabilities are based on the fitted model. The first feature (#symbols) shows that the longer the title the higher the probability of low rating (-1 or 0). 
 
-				P(-1)	P(0)	P(1)	P(2)	p(3)
+	P(-1)	P(0)	P(1)	P(2)	p(3)
 	#symbols	61%	23%	2%	6%	8%
 	vision		25%	46%	9%	7%	13%
 	promotion	19%	11%	15%	15%	41%
-	av.sym/word	48%	27%		3%		9%		13%
-	#words		26%	15%		6%		12%		41%
-	disease		73%	15%		4%		3%		5%
-	nuclear		46%	18%		12%		9%		15%
-	transfer	75%	7%		4%		4%		1%
-	smart		66%	13%		3%		1%		9%
-	neural		42%	24%		3%		8%		22%
-	botany		69%	7%		3%		3%		18%
-	scandinavian17%	9%		11%		25%		39%
-	limnology	15%	25%		2%		1%		31%
+	av.sym/word	48%	27%	3%	9%	13%
+	#words		26%	15%	6%	12%	41%
+	disease		73%	15%	4%	3%	5%
+	nuclear		46%	18%	12%	9%	15%
+	transfer	75%	7%	4%	4%	1%
+	smart		66%	13%	3%	1%	9%
+	neural		42%	24%	3%	8%	22%
+	botany		69%	7%	3%	3%	18%
+	scandinavian17%	9%	11%	25%	39%
+	limnology	15%	25%	2%	1%	31%
 	za		32%	2%	17%	16%	15%
-	mechanics	2%	7%		12%		19%		42%
-	ergonomics	9%	57%		6%		8%		21%
-	metal		44%	8%		3%		9%		35%
-	surgery		73%	7%		7%		3%		1%
-	mental		15%	51%		21%		9%		4%
-	hospitality	58%	1%		11%		13%		8%
+	mechanics	2%	7%	12%	19%	42%
+	ergonomics	9%	57%	6%	8%	21%
+	metal		44%	8%	3%	9%	35%
+	surgery		73%	7%	7%	3%	1%
+	mental		15%	51%	21%	9%	4%
+	hospitality	58%	1%	11%	13%	8%
