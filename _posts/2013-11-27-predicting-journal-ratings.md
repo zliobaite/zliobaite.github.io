@@ -41,7 +41,7 @@ The above results are based on the assumption that any misclassification is equa
 
 The mean cost weighted error of our classifier is 0.33, while random classifier gives 0.57. This means that our classification is about 50% better than random, so there is some predictive power in the titles after all. 
 
-**What are the most informative title words?** Here are 20 most informative words and the probabilities of classes if these words are present.
+**What are the most informative title words?** Here are 20 most informative words/features.
 
 	#symbols
 	vision
