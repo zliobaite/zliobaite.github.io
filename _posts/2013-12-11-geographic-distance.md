@@ -16,7 +16,7 @@ MathJax.Hub.Config({
 </script>
 </head>
 
-Suppose we have two objects with known geographic coordinates in [WGS84](http://en.wikipedia.org/wiki/World_Geodetic_System). Here is a simplified formula for calculating the Earth distance $D$ between these two objects in kilometres.
+Suppose we have two objects with known geographic coordinates in [WGS84](http://en.wikipedia.org/wiki/World_Geodetic_System). Here is a simplified formula for calculating the Earth distance $D$ between these two objects in kilometers.
 $$
 D = 6378.137 \times \arccos(S)
 $$
@@ -24,6 +24,6 @@ $$
 S = \cos\big(R(\phi_1)\big) \cos\big(R(\phi_2\big) \cos\big(R(\lambda_2)- R(\lambda_1)\big) + \sin\big(R(\phi_1)\big) \sin\big(R(\lambda_2)\big)
 $$
 $$R(x) = \frac{x\pi}{180}$$
-Here $\phi_1$ is the lattitide of object $1$, $\lambda_1$ is the longitude of onject $1$, and $\phi_2$, $\lambda_2$ are the coordinates of object $2$ correspondingly. Function $R()$ converts degrees to radians.
+Here $\phi_1$ is the latitude of object $1$, $\lambda_1$ is the longitude of object $1$, and $\phi_2$, $\lambda_2$ are the coordinates of object $2$ correspondingly. Function $R()$ converts degrees to radians.
 
 More information can be found [here](http://www.mapanet.eu/EN/resources/Script-Distance.htm).
