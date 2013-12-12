@@ -21,7 +21,7 @@ $$
 D = 6378.137 \times \arccos(S)
 $$
 $$
-S = \cos\big(R(\phi_1)\big) \cos\big(R(\phi_2\big) \cos\big(R(\lambda_2)- R(\lambda_1)\big) + \sin\big(R(\phi_1)\big) \sin\big(R(\lambda_2)\big)
+S = \cos\big(R(\phi_1)\big) \cos\big(R(\phi_2\big) \cos\big(R(\lambda_2-\lambda_1)\big) + \sin\big(R(\phi_1)\big) \sin\big(R(\phi_2)\big)
 $$
 $$R(x) = \frac{x\pi}{180}$$
 Here $\phi_1$ is the latitude of object $1$, $\lambda_1$ is the longitude of object $1$, and $\phi_2$, $\lambda_2$ are the coordinates of object $2$ correspondingly. Function $R()$ converts degrees to radians.
