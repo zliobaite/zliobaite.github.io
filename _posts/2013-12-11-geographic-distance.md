@@ -26,6 +26,8 @@ $$
 $$R(x) = \frac{x\pi}{180}$$
 Here $\phi_1$ is the latitude of object $1$, $\lambda_1$ is the longitude of object $1$, and $\phi_2$, $\lambda_2$ are the coordinates of object $2$ correspondingly. Function $R()$ converts degrees to radians.
 
+More information can be found [here](http://www.mapanet.eu/EN/resources/Script-Distance.htm).
+
 **Example.**
 
 Helsinki $\lambda_1 = 60.1708$, $\phi_1 = 24.9375$
@@ -45,6 +47,3 @@ $\sin\big(R(\phi_2)\big) = 0.42709$
 $S = 0.99622$
 
 Distance $D = 6378.137×arccos(S) = 554.742 km
-
-
-More information can be found [here](http://www.mapanet.eu/EN/resources/Script-Distance.htm).
