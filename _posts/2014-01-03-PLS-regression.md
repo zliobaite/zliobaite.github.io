@@ -16,7 +16,7 @@ MathJax.Hub.Config({
 </script>
 </head>
 
-Partial Least Sqares (PLS) regression is popular in chemometrics, but not so well known in data streams. It is a linear regression model. Data is projected into lower dimensional space, and a regression model is produced. 
+Partial Least Squares (PLS) regression is popular in chemometrics, but not so well known in data streams. It is a linear regression model. Data is projected into lower dimensional space, and a regression model is produced. 
 
 PLS regression has nice properties for streaming data analysis. It can be updated recursively, and it can adapt over time.
 
