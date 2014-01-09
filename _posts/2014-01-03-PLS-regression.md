@@ -28,12 +28,12 @@ Initialize: $\mathbf{E}_0 = \mathbf{X}$ and $\mathbf{u}_0 = \mathbf{y}$.
 
 Loop: repeat the following steps for $i=1$ to $k$: 
 
-1. $\mathbf{v} = \mathbf{E}^T_{i-1}\mathbf{u}_{i-1}$, $v_{\mathit{norm}} = \sqrt{\mathbf{v}^T\mathbf{v}}$, $\mathbf{w}_i = \mathbf{v}/v_{\mathit{norm}}$  
-2. $\mathbf{t} = \mathbf{X}\mathbf{w}_i$, $t_{\mathit{norm}} = \sqrt{\mathbf{t}^T\mathbf{t}}$ 
-4. $\mathbf{p}_i = \mathbf{X}^T\mathbf{t}/t_{\mathit{norm}}$
-5. $q_i = \mathbf{y}^T\mathbf{t}/t_{\mathit{norm}}$
-6. $\mathbf{E}_i = \mathbf{E}_{i-1} - \mathbf{t}\mathbf{p}_i^T$
-7. $\mathbf{u}_i = \mathbf{u}_{i-1} - \mathbf{t}q_i$
+1. $\mathbf{w}_i = \mathbf{E}^T_{i-1}\mathbf{u}_{i-1}/(\mathbf{u}_{i-1}^T\mathbf{u}_{i-1})$, $w_i \gets ||w_i||$    
+2. $\mathbf{t} = \mathbf{X}\mathbf{w}_i$
+3. $q = \mathbf{u}^T_{i-1}\mathbf{t}/(\mathbf{t}^T\mathbf{t})$, $\mathbf{u}_i = \mathbf{u}_{i-1}$
+4. $\mathbf{p}_i = \mathbf{E}^T_{i-1}\mathbf{t}/(\mathbf{t}^T\mathbf{t})$
+5. $\mathbf{E}_i = \mathbf{E}_{i-1} - \mathbf{t}\mathbf{p}_i^T$
+6. $\mathbf{u}_i = \mathbf{u}_{i-1} - \mathbf{t}q_i$
 
 Collect the results into matrixes:
 $\mathbf{W} = (\mathbf{w}_1,\ldots,\mathbf{w}_k)$, 
@@ -49,13 +49,15 @@ In Python the iterative optimization procedure can be implemented as follows, as
 	P = np.zeros((k,components))
 	Q = np.zeros(components)
 	for i in range(k):
-		v = np.dot(data.T,labels)
-		w = v / np.sqrt(np.dot(v.T,v))
+		w = np.dot(data.T,u)*1.0/np.dot(u.T,u)
+		wnorm = np.sqrt(np.dot(w.T,w))
+		w = w*1.0 / wnorm
 		t = np.dot(data,w)
-		tnorm = np.sqrt(np.dot(t.T,t))
-		p = np.dot(data.T,t)/tnorm
+		tt = np.dot(t.T,t)
+		q = np.dot(t.T,labels)*1.0/tt
+		u = labels
+		p = np.dot(data.T,t)*1.0/tt
 		data = data - np.outer(t,p)
-		q = np.dot(t.T,labels)/tnorm
 		labels = labels - t*q
 		W[:,i] = w
 		P[:,i] = p
