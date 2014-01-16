@@ -5,11 +5,14 @@ tags : [streaming data,regression,online learning,concept drift,adaptive algorit
 title : PLS regression 
 ---
 {% include JB/setup %}
+
 <head>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+	config: ["MMLorHTML.js"],
+  	tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
 });
+
 </script>
 <script type="text/javascript"
  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
