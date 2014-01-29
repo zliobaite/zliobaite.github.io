@@ -12,7 +12,7 @@ title : Online adaptive estimation of mean and variance
 </script>
 </head>
 
-Suppose we have a random variable $$x$$. Observations arrive in a stream, $$x_t$$ indicates the observation at time $t$. If we have access to all the historical observations, the mean is $$\bar{x}_t = \frac{1}{t}\sum_{i=1}^t x_i$$.
+Suppose we have a random variable $$x$$. Observations arrive in a stream, $$x_t$$ indicates the observation at time $$t$$. If we have access to all the historical observations, the mean is $$\bar{x}_t = \frac{1}{t}\sum_{i=1}^t x_i$$.
 
 If we do not have access to all the historical data, the mean can be estimated online recursively. Using $$\bar{x}_{t-1} = \frac{1}{t-1}\sum_{i=1}^{t-1} x_i$$ we get
 $$

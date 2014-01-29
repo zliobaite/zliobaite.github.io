@@ -14,13 +14,13 @@ title : Online adaptive regression
 
 Earlier I wrote about [online regression]({% post_url 2013-11-19-online-regression %}), which receives observations one by one and recursively learns a regression model. We get a the same model, as learning offline on all the training observations. What, if we want the model to adapt over time? 
 
-**Update equations.** Here is an online regression that uses exponential forgetting. It is assumed that newer observations are more informative older ones. Let $\alpha \in (0,1)$ be the forgetting rate. 
+**Update equations.** Here is an online regression that uses exponential forgetting. It is assumed that newer observations are more informative older ones. Let $$\alpha \in (0,1)$$ be the forgetting rate. 
 
 When at time $$t$$ observation $$X_t = (x_1,x_2,\ldots,x_r)$$ with the corresponding  true target value $$y_t$$ becomes available, the model is updated the same way as for [the non adaptive online regresion]({% post_url 2013-11-19-online-regression %}):
 $$
 \hat{B}_t = \hat{B}_{t-1} + \mathbf{S}_t^{-1}X_t^T(y_t  - X_t\hat{B}_{t-1}),
 $$
-where $\mathbf{S}$ is the covariance estimate, $\hat{B}$ is the estimate of regression coefficients. 
+where $$\mathbf{S}$$ is the covariance estimate, $$\hat{B}$$ is the estimate of regression coefficients. 
 The update for the covariance estimate is 
 $$
 \mathbf{S}_t^{-1} = \frac{1}{\alpha}\left(\mathbf{S}_{t-1}^{-1}
