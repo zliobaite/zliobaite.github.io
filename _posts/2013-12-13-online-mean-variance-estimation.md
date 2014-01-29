@@ -27,7 +27,7 @@ $$
 here $$\alpha \in (0,1)$$ is the smoothing weight. The larger $$\alpha$$, the faster the forgetting.
 
 
-Similarly, we can estimate the variance $\mathit{Var}(x)$. If we have access to  all the historical data, sample variance is estimated as $$\mathit{Var}(x)_t = \frac{1}{t-1}\sum_{i=1}^t (x_i - \bar{x})^2$, where $\bar{x}$$ is the mean. 
+Similarly, we can estimate the variance $$\mathit{Var}(x)$$. If we have access to  all the historical data, sample variance is estimated as $$\mathit{Var}(x)_t = \frac{1}{t-1}\sum_{i=1}^t (x_i - \bar{x})^2$$, where $$\bar{x}$$ is the mean. 
 
 Online recursive estimation is given by 
 $$
