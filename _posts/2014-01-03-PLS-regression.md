@@ -18,18 +18,20 @@ PLS regression has nice properties for streaming data analysis. It can be update
 
 **Batch model.** There is no closed form solution for producing a model, therefore, an iterative optimization procedure is used. 
 
-Let $$\mathbf{X}$$ be a $$n \times r$$ matrix of input data, where each line is an observation. Let $$\mathbf{y}$$ be an $$n \times 1$$ vector of the target values, corresponding to the observations in $\mathbf{X}$. Assume that the data is standardized prior to the analysis to zero mean and unit variance. Let $$k$$ be a parameter indicating the dimensionality of the projected data, such that $$0 < k < r$$.
+Let $$\mathbf{X}$$ be a $$n \times r$$ matrix of input data, where each line is an observation. Let $$\mathbf{y}$$ be an $$n \times 1$$ vector of the target values, corresponding to the observations in $$\mathbf{X}$$. Assume that the data is standardized prior to the analysis to zero mean and unit variance. Let $$k$$ be a parameter indicating the dimensionality of the projected data, such that $$0 < k < r$$.
 
 Initialize: $$\mathbf{E}_0 = \mathbf{X}$$ and $$\mathbf{u}_0 = \mathbf{y}$$.
 
 Loop: repeat the following steps for $$i=1$$ to $$k$$: 
 
-1. $$\mathbf{w}_i = \mathbf{E}^T_{i-1}\mathbf{u}_{i-1}/(\mathbf{u}_{i-1}^T\mathbf{u}_{i-1})$$, $$w_i \gets ||w_i||$$
-2. $$\mathbf{t} = \mathbf{X}\mathbf{w}_i$$
-3. $$q = \mathbf{u}^T_{i-1}\mathbf{t}/(\mathbf{t}^T\mathbf{t})$$, $$\mathbf{u}_i = \mathbf{u}_{i-1}$$
-4. $$\mathbf{p}_i = \mathbf{E}^T_{i-1}\mathbf{t}/(\mathbf{t}^T\mathbf{t})$$
-5. $$\mathbf{E}_i = \mathbf{E}_{i-1} - \mathbf{t}\mathbf{p}_i^T$$
-6. $$\mathbf{u}_i = \mathbf{u}_{i-1} - \mathbf{t}q_i$$
+1. $$\mathbf{w}_i = \mathbf{E}^T_{i-1}\mathbf{u}_{i-1}/(\mathbf{u}_{i-1}^T\mathbf{u}_{i-1})$$
+2. $$w_i \gets ||w_i||$$
+3. $$\mathbf{t} = \mathbf{X}\mathbf{w}_i$$
+4. $$q = \mathbf{u}^T_{i-1}\mathbf{t}/(\mathbf{t}^T\mathbf{t})$$
+5. $$\mathbf{u}_i = \mathbf{u}_{i-1}$$
+6. $$\mathbf{p}_i = \mathbf{E}^T_{i-1}\mathbf{t}/(\mathbf{t}^T\mathbf{t})$$
+7. $$\mathbf{E}_i = \mathbf{E}_{i-1} - \mathbf{t}\mathbf{p}_i^T$$
+8. $$\mathbf{u}_i = \mathbf{u}_{i-1} - \mathbf{t}q_i$$
 
 Collect the results into matrixes:
 $$\mathbf{W} = (\mathbf{w}_1,\ldots,\mathbf{w}_k)$$, 

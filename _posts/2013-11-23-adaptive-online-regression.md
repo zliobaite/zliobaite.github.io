@@ -5,12 +5,8 @@ tags : [streaming data,regression,online learning,concept drift,adaptive algorit
 title : Online adaptive regression 
 ---
 {% include JB/setup %}
+
 <head>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-});
-</script>
 <script type="text/javascript"
  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
@@ -20,7 +16,7 @@ Earlier I wrote about [online regression]({% post_url 2013-11-19-online-regressi
 
 **Update equations.** Here is an online regression that uses exponential forgetting. It is assumed that newer observations are more informative older ones. Let $\alpha \in (0,1)$ be the forgetting rate. 
 
-When at time $t$ observation $X_t = (x_1,x_2,\ldots,x_r)$ with the corresponding  true target value $y_t$ becomes available, the model is updated the same way as for [the non adaptive online regresion]({% post_url 2013-11-19-online-regression %}):
+When at time $$t$$ observation $$X_t = (x_1,x_2,\ldots,x_r)$$ with the corresponding  true target value $$y_t$$ becomes available, the model is updated the same way as for [the non adaptive online regresion]({% post_url 2013-11-19-online-regression %}):
 $$
 \hat{B}_t = \hat{B}_{t-1} + \mathbf{S}_t^{-1}X_t^T(y_t  - X_t\hat{B}_{t-1}),
 $$
