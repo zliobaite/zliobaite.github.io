@@ -20,7 +20,7 @@ $$
 $$
 We need to keep in memory only the previous estimate $$\bar{x}_{t-1}$$ and the counter $$t$$. 
 
-This recursive estimate does not have any forgetting mechanism. When $$t$$ gets large, the contribution of the next $$x_t$$ to the estimate becomes very small. In addition, it may happen that the distribution of data changes over time. Therefore, we may want to have an adaptive mean estimate $\bar{x}_t^\star$, which can be recursively computed using a simple exponential smoothing
+This recursive estimate does not have any forgetting mechanism. When $$t$$ gets large, the contribution of the next $$x_t$$ to the estimate becomes very small. In addition, it may happen that the distribution of data changes over time. Therefore, we may want to have an adaptive mean estimate $$\bar{x}_t^\star$$, which can be recursively computed using a simple exponential smoothing
 $$
 \bar{x}_t^\star = (1-\alpha)\bar{x}_{t-1}^\star + \alpha x_t,
 $$ 

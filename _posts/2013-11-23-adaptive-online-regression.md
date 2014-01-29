@@ -27,7 +27,7 @@ $$
 - \frac{\mathbf{S}_{t-1}^{-1}X_t^TX_t\mathbf{S}_{t-1}^{-1}}{\alpha + X_t\mathbf{S}_{t-1}^{-1}X_t^T}\right).
 $$
 
-**Initialization.** The model can be initialized as $$\mathbf{S} = \mathbf{I}_{r \times r}$$ (identity matrix, where $r$ is the number of input variables) and $\hat{B} = \mathbf{0}_{r \times 1}$.
+**Initialization.** The model can be initialized as $$\mathbf{S} = \mathbf{I}_{r \times r}$$ (identity matrix, where $$r$$ is the number of input variables) and $$\hat{B} = \mathbf{0}_{r \times 1}$$.
 
 **How does it work?**  
 Optimization is based on the loss function
@@ -40,11 +40,11 @@ which can be expressed as
 $$
 \mathbf{X}_t^T\mathbf{A}_t\mathbf{X}_t\hat{B}_t = \mathbf{X}_t^T\mathbf{A}_t\mathbf{y}_t,
 $$
-where $\mathbf{X}_t  = (X_1^T, X_2^T, \ldots, X_t^T)^T$,
-$\mathbf{y}_t = (y_1,y_2,\ldots,y_t)^T$, and $\mathbf{A}_t = \mathit{diag}(\alpha^{t-1},\alpha^{t-2},\ldots,1)$.
+where $$\mathbf{X}_t  = (X_1^T, X_2^T, \ldots, X_t^T)^T$$,
+$$\mathbf{y}_t = (y_1,y_2,\ldots,y_t)^T$$, and $$\mathbf{A}_t = \mathit{diag}(\alpha^{t-1},\alpha^{t-2},\ldots,1)$$.
 
 Let $$\mathbf{S}_t = \mathbf{X}^T_t\mathbf{A}_t\mathbf{X}_t$$. Then,
-$\mathbf{S}_t = \alpha\mathbf{S}_{t-1} + X_t^TX_t$. 
+$$\mathbf{S}_t = \alpha\mathbf{S}_{t-1} + X_t^TX_t$$. 
 
 Now we can find the update equation,
 $$
