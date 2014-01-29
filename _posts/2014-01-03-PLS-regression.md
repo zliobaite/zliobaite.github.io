@@ -25,7 +25,7 @@ Initialize: $$\mathbf{E}_0 = \mathbf{X}$$ and $$\mathbf{u}_0 = \mathbf{y}$$.
 Loop: repeat the following steps for $$i=1$$ to $$k$$: 
 
 1. $$\mathbf{w}_i = \mathbf{E}^T_{i-1}\mathbf{u}_{i-1}/(\mathbf{u}_{i-1}^T\mathbf{u}_{i-1})$$
-2. $$w_i \gets ||w_i||$$
+2. $$w_i \gets \||w_i\||$$
 3. $$\mathbf{t} = \mathbf{X}\mathbf{w}_i$$
 4. $$q = \mathbf{u}^T_{i-1}\mathbf{t}/(\mathbf{t}^T\mathbf{t})$$
 5. $$\mathbf{u}_i = \mathbf{u}_{i-1}$$
