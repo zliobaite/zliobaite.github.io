@@ -6,17 +6,6 @@ title : Heatmaps for visualizing events over time on a map
 ---
 {% include JB/setup %}
 
-I wanted to visualize events over time on a map, here is what I came up with.
-<video 
-  class="ne" 
-  src="http://zliobaite.github.io/assets/events_movie.mp4" 
-  muted="true" 
-  volume="0"  
-  controls 
-  width="480" 
-  height="320" 
-  poster="http://zliobaite.github.io/assets/map_helsinki_h.png" 
-  type="video/mp4">
-</video>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/ZLPRcFnx9LU" frameborder="0" allowfullscreen> </iframe>
 
 The implementation in Python is available [here](https://github.com/zliobaite/Heatmaps). 
