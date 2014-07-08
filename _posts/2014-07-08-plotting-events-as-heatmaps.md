@@ -13,8 +13,8 @@ I wanted to visualize events over time on a map, here is what I came up with.
   muted="true" 
   volume="0"  
   controls 
-  width="720" 
-  height="480" 
+  width="480" 
+  height="320" 
   poster="http://zliobaite.github.io/assets/map_helsinki_h.png" 
   type="video/mp4">
 </video>
