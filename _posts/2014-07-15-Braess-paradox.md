@@ -14,7 +14,7 @@ Here is how it looks:
 
 ![Routes1](http://zliobaite.github.io/assets/situation1.jpg)
 
-Assuming thatdrivers know the current traffic situation, the equilibrium would settle at half of the drivers (2000) going route A, and the other half route B. For each driver the trip would take 45+20 = 65 min.
+Assuming that drivers know the current traffic situation, the equilibrium would settle at half of the drivers (2000) going route A, and the other half route B. For each driver the trip would take 45+20 = 65 min.
 
 Now imagine the local government decides to build a bridge between A and B. Assume crossing the bridge takes 0 time. Now everybody (4000 drivers) would go by car following the orange route. 
 ![Routes2](http://zliobaite.github.io/assets/situation2.jpg)
