@@ -12,11 +12,11 @@ Suppose 4000 drivers want to get from sleeping place to work. There are two rout
 
 Here is how it looks:
 
-![Routes1](http://zliobaite.github.io/assets/situation1.jpg =300x)
+![Routes1](http://zliobaite.github.io/assets/situation1.jpg)
 
 Assuming thatdrivers know the current traffic situation, the equilibrium would settle at half of the drivers (2000) going route A, and the other half route B. For each driver the trip would take 45+20 = 65 min.
 
 Now imagine the local government decides to build a bridge between A and B. Assume crossing the bridge takes 0 time. Now everybody (4000 drivers) would go by car following the orange route. 
-![Routes2](http://zliobaite.github.io/assets/situation2.jpg =300x)
+![Routes2](http://zliobaite.github.io/assets/situation2.jpg)
 
 The trip would take 40+40 = 80 min, which is by 15 min longer than before. However, nobody would switch to train, since that would take even longer (45+45=90min). Traveling one leg by train would also take longer (40+45=85min). So, everybody is worse-off due to the bridge. 
