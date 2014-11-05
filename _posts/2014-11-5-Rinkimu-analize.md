@@ -12,4 +12,4 @@ Per 2012 Seimo rinkimus, kai buvo kalbų apie balsų pirkimą, greituoju būdu b
 
 Analizės esmė - rasti kandidatus, kurių gaunami balsai pasiskirsto panašiai. Tokiu būdu galima aptikti kandidatus, kurie, pvz. kartu vykdo rinkiminę kampaniją, bet taip pat gali pasimatyti, jeigu kas "perka" balsus, pvz. pateikdami užpildytas rinkėjo korteles su tais pačiais 5 kandidatais. Aišku, kiekybinė analizė pasakys tiktai kas su kuo susiję, nepasakys - kodėl.
 
-Analizės santrauka ir rezultatai [aprašyti čia](https://github.com/zliobaite/__Rinkimu-analize-2012/blob/__master/1_communication/__Zliobaite_seimo_2012.pdf?raw=__true) 
+Analizės santrauka ir rezultatai [aprašyti čia](https://github.com/zliobaite/Rinkimu-analize-2012/blob/master/1_communication/Zliobaite_seimo_2012.pdf?raw=true) 
