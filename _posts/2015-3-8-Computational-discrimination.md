@@ -2,7 +2,7 @@
 layout: post
 category : publications
 tags : [predictive modeling, discrimination, bias, fairness]
-title : Why Unbiased Computational Processes Can Lead to Discriminative Decision Procedures
+title : Unintentional discrimination in data-driven decision making
 ---
 {% include JB/setup %}
 
