@@ -1,6 +1,6 @@
 ---
 layout: post
-category : publications
+category : publications, discrimination
 tags : [predictive modeling, discrimination, bias, fairness]
 title : Unintentional discrimination in data-driven decision making
 ---
