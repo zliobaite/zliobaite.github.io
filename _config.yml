@@ -16,6 +16,11 @@ author :
   email : zliobaite at gmail com
   github : zliobaite
   twitter : inzl2555
+  googleplus : zliobaite
+  bitbucket : inzl
+  facebook : inzl2555
+  stackoverflow : inzl
+  linkedin : indrė-žliobaitė
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -101,7 +106,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-62399911-1'
     getclicky :
       site_id : 
     mixpanel :
