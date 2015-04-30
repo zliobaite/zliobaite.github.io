@@ -21,6 +21,8 @@ author :
   facebook : inzl2555
   stackoverflow : inzl
   linkedin : indrė-žliobaitė
+  
+description : Research blog in data mining. Currently focuses on fairness (non-discrimination) in data mining and machine learning.   
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -134,3 +136,5 @@ JB :
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
   
+gems:
+  - jekyll-sitemap  
