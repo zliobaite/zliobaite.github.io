@@ -14,4 +14,4 @@ Here is an example of a threshold based detection:
 
 ![Routes1](http://zliobaite.github.io/assets/ex1_aurora_detection.png)
 
-If somebody is interested to explore, I put the code on [GitHub](https://github.com/zliobaite/Aurora-detection).
+For those, who ar interested to try, I put the code on [GitHub](https://github.com/zliobaite/Aurora-detection).

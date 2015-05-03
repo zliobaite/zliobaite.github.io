@@ -1,12 +1,14 @@
 ---
 layout: post
 category : discrimination
-tags : [digital discrimination, machine learning, data mining, discrimination, bias, fairness, AirBnB]
+tags : [digital discrimination, machine learning, data mining, fairness, AirBnB, net neutrality, data discrimination]
 title : What is digital discrimination?
 ---
 {% include JB/setup %}
 
 Modern forms of discrimination are subtile and difficult to spot, and, perhaps even not intentional. Indirect discrimination is such. Typically, it is a rule or a procedure that puts certain groups of people into a disadvantage. For example, a requirement to fill in a research grant application form in MS Excel puts into a disadvantage users of Linux or Mac OS. Software platform, of course, is not yet a legally recognized ground for discrimination, but it makes a good example. 
+
+![Associative picture](http://zliobaite.github.io/assets/ID-100282992.jpg)
 
 Within indirect discrimination, digital discrimination is even more subtle and difficult to spot. Initially, digital discrimination was referring to disadvantages *due to* having no internet access or not using modern technologies. For example, if call for grant applications is only available on the internet, people who have no internet would be less likely to know about the call and to apply. This is an example of digital redlining. *Digital* is a mechanism of discrimination here. 
 
@@ -23,4 +25,11 @@ Perhaps the most attention and media coverage towards *digital discrimination* h
 * [Airbnb, the home-renting website, has been great for me, but I have misgivings](http://www.theguardian.com/technology/2014/oct/13/airbnb-ethos-property-rental) The Guardian
 * [Study finds black people suffer from discrimination on Airbnb](http://www.metro.us/news/study-finds-black-people-suffer-from-discrimination-on-airbnb/tmWnat---caXF1K8rFA216/) Metro
 
-Curiously, AirBnB does not control the prices. So AirBnB does not discriminate here, the crowd does. That is how digital discrimination is subtile - difficult to spot, and even more difficult to prevent.
+Curiously, AirBnB does not control prices. So AirBnB does not discriminate here, the crowd does. That is how digital discrimination is subtile - difficult to spot, and even more difficult to prevent.
+
+**Update**
+
+Two related terms are *net neutrality*  (or *data discrimination*). Net neutrality is the principle that all the data on the internet should be treated equally. For example, if a provider intentionally slows down peer-to-peer file sharing, that is a violation of net neutrality. 
+
+---
+Image courtesy of Stuart Miles at FreeDigitalPhotos.net

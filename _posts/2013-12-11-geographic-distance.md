@@ -24,7 +24,7 @@ Here $$\phi_1$$ is the latitude of object $$1$$, $$\lambda_1$$ is the longitude 
 
 More information can be found [here](http://www.mapanet.eu/EN/resources/Script-Distance.htm).
 
-**Example.**
+**Example**
 
 Helsinki $$\lambda_1 = 60.1708$$, $$\phi_1 = 24.9375$$
 
@@ -43,3 +43,21 @@ $$\sin\big(R(\phi_2)\big) = 0.42709$$
 $$S = 0.99622$$
 
 Distance $$D = 6378.137×\arccos(S) = 554.742$$ km
+
+**R code**
+
+	deg_to_radians <- function(degrees)
+	{
+	  return(degrees*pi/180)
+	}
+
+	compute_geo_distance <- function(lat1,lon1,lat2,lon2) #in km
+	{
+	  rearth = 6378.137 #Earth Radius in km
+	  fi1 <- cos(deg_to_radians(lat1))*cos(deg_to_radians(lat2))*cos(deg_to_radians(lon2-lon1))
+	  fi2 <- sin(deg_to_radians(lat1))*sin(deg_to_radians(lat2))
+	  dist = rearth*acos(fi1+fi2)
+	  return(dist)
+	}
+	
+	compute_geo_distance(24.9375,60.1708,25.2833,54.6833)
