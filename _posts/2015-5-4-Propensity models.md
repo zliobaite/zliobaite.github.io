@@ -8,7 +8,7 @@ title : Propensity models
 
 Propensity models are used in clinical studies and in marketing to account for differences in treatment and control groups. Often assignment to treatment is not a random procedure, but someody decides. Propensity score is the probability for a person to be assigned to treatment. Propensity score comes from a model.
 
-![Heimdall](http://zliobaite.github.io/assets/ambrosia.jpg) 
+![Heimdall](http://zliobaite.github.io/assets/Heimdall.jpg) 
 *<small>Illustration form [Marvell database](http://marvel.wikia.com/)</small>.*
 
 Imagine Heimdall the gatekeeper. When a creature approaches the gate, Heimdall decides whether the creature can enter the palace and drink ambrosia (ok ok, different mythology, but let it be for illustration). A curious researcher wants to find out whether the ambrosia adds strength, so s/he measures the strength of those who drank ambrosia, and those who haven't and statistically compares the two samples. 
