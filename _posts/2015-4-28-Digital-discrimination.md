@@ -9,6 +9,7 @@ title : What is digital discrimination?
 Modern forms of discrimination are subtile and difficult to spot, and, perhaps even not intentional. Indirect discrimination is such. Typically, it is a rule or a procedure that puts certain groups of people into a disadvantage. For example, a requirement to fill in a research grant application form in MS Excel puts into a disadvantage users of Linux or Mac OS. Software platform, of course, is not yet a legally recognized ground for discrimination, but it makes a good example. 
 
 ![Associative picture](http://zliobaite.github.io/assets/ID-100282992.jpg)
+(associative picture)
 
 Within indirect discrimination, digital discrimination is even more subtle and difficult to spot. Initially, digital discrimination was referring to disadvantages *due to* having no internet access or not using modern technologies. For example, if call for grant applications is only available on the internet, people who have no internet would be less likely to know about the call and to apply. This is an example of digital redlining. *Digital* is a mechanism of discrimination here. 
 
@@ -32,4 +33,4 @@ Curiously, AirBnB does not control prices. So AirBnB does not discriminate here,
 Two related terms are *net neutrality*  (or *data discrimination*). Net neutrality is the principle that all the data on the internet should be treated equally. For example, if a provider intentionally slows down peer-to-peer file sharing, that is a violation of net neutrality. 
 
 ---
-Image courtesy of Stuart Miles at FreeDigitalPhotos.net
+*Image courtesy of Stuart Miles at FreeDigitalPhotos.net*
