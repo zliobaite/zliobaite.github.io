@@ -6,12 +6,12 @@ title : Propensity models
 ---
 {% include JB/setup %}
 
-Propensity models are used in clinical studies and in marketing to account for differences in treatment and control groups. Often assignment to treatment is not a random procedure, but someody decides. Propensity score is the probability for a person to be assigned to treatment. Propensity score comes from a model.
+Propensity models are used in clinical studies and in marketing to account for differences in treatment and control groups. Often assignment to treatment is not a random procedure, but somebody decides. Propensity score is the probability for a person to be assigned to treatment. Propensity score comes from a model.
 
 ![Heimdall](http://zliobaite.github.io/assets/Heimdall.jpg) 
 *<small>Illustration form [Marvell database](http://marvel.wikia.com/)</small>.*
 
-Imagine Heimdall the gatekeeper. When a creature approaches the gate, Heimdall decides whether the creature can enter the palace and drink ambrosia (ok ok, different mythology, but let it be for illustration). A curious researcher wants to find out whether the ambrosia adds strength, so s/he measures the strength of those who drank ambrosia, and those who haven't and statistically compares the two samples. 
+For example, imagine Heimdall the gatekeeper. When a creature approaches the gate, Heimdall decides whether the creature can enter the palace and drink ambrosia (ok ok, different mythology, but let it be for illustration). A curious researcher wants to find out whether the ambrosia adds strength, so s/he measures the strength of those who drank ambrosia, and those who haven't and statistically compares the two samples. 
 
 ![Ambrosia](http://zliobaite.github.io/assets/ambrosia.jpg)
 *<small>Illustration: "[WLANL - MicheleLovesArt - Museum Boijmans Van Beuningen - Istoriato schotel, de maaltijd der Goden op de Olympus" by MicheleLovesArt - Museum Boijmans Van Beuningen - Istoriato schotel: de maaltijd der Goden op de Olympus](http://commons.wikimedia.org/wiki/File:WLANL_-_MicheleLovesArt_-_Museum_Boijmans_Van_Beuningen_-_Istoriato_schotel,_de_maaltijd_der_Goden_op_de_Olympus.jpg#/media/File:WLANL_-_MicheleLovesArt_-_Museum_Boijmans_Van_Beuningen_-_Istoriato_schotel,_de_maaltijd_der_Goden_op_de_Olympus.jpg). Licensed under CC BY-SA 2.0 via Wikimedia Commons.</small>*
