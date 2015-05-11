@@ -2,7 +2,7 @@
 layout: post
 category : discrimination 
 tags : [fairness, press]
-title : Media: ways to preserve fairness when algorithms are making decisions 
+title : Media - ways to preserve fairness when algorithms are making decisions 
 ---
 {% include JB/setup %}
 
