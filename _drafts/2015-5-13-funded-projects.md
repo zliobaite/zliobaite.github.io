@@ -1,8 +1,8 @@
 ---
 layout: post
 category : discrimination
-tags : [AirBnB]
-title : Discrimination case of AirBnB
+tags : [funding,projects,EU]
+title : Projects about fairness in (big) data
 ---
 {% include JB/setup %}
 
