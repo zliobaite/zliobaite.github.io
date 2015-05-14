@@ -10,7 +10,7 @@ title : Berkson's paradox
 
 A few weeks ago [Peter Norvig](https://youtu.be/DdmyUZCl75s) said that "being a winner at one of these programming contests was actually a negative factor for performing well on the job". As a possible expalantion he mentioned that the winners are used to hacking a solution fast and moving to a next thing, which may not necessarily be good for the job. 
 
-![Toy example](http://zliobaite.github.io/assets/fig_Berksons.pdf)
+![Toy example](http://zliobaite.github.io/assets/fig_Berksons.png)
 
 Suppose a university is selecting candidates for a master programme. Performance at contests is evaluated from 0 to 100, and performance at jobs is also evaluated from 0 to 100. Students with a combined score of 150 or more are accepted, as illustrated. The correlation between the contest score and job score among those accepted would be about -0.48, meaning that if somebody among the accepted candidates is good in contests, it is likely that s/he was bad at jobs. 
 
