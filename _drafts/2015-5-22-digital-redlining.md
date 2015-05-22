@@ -21,9 +21,9 @@ If there was no age bias in the hitorical credit risk data then no problem. But 
 
 Here is a toy example. Suppose credit risk historically has been decided by human analysts presuming that younger clients have higher risk, clients with higher income have lower risk. The older the person, the highr the income, as in the pictures. 
 
-![fig1](http://zliobaite.github.io/assets/fig_risk_age.jpg)
-![fig2](http://zliobaite.github.io/assets/fig_risk_income.jpg)
-![fig3](http://zliobaite.github.io/assets/fig_income_age.jpg) 
+![fig1](http://zliobaite.github.io/assets/fig_risk_age.png)
+![fig2](http://zliobaite.github.io/assets/fig_risk_income.png)
+![fig3](http://zliobaite.github.io/assets/fig_income_age.png) 
 
 Now the bank is making a model for deciding upon credit risk automatically. 
 
