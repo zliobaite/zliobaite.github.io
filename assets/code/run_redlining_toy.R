@@ -15,12 +15,12 @@ png('fig_risk_income.png',width = 280,height = 300)
 plot(income,risk,pch = 20,xlab = 'income',ylab = 'risk')
 dev.off()
 
-png('fig_risk_age.png',width = 6, height = 7.5, units = 'cm', res = 160)
-plot(age,risk,cex = 0.3,cex.lab=0.5, cex.axis=0.5,xlab = 'age',ylab = 'risk')
+png('fig_risk_age.png',width = 280,height = 300)
+plot(age,risk,pch = 20,xlab = 'age',ylab = 'risk')
 dev.off()
 
-png('fig_income_age.png',width = 6, height = 7.5, units = 'cm', res = 160)
-plot(income,age,cex = 0.3,cex.lab=0.5, cex.axis=0.5,xlab = 'income',ylab = 'age')
+png('fig_income_age.png',width = 280,height = 300)
+plot(income,age,pch = 20,xlab = 'income',ylab = 'age')
 dev.off()
 
 data <- as.data.frame(cbind(risk,income,age))

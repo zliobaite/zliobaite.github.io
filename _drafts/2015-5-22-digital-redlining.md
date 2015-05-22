@@ -25,8 +25,6 @@ Here is a toy example. Suppose credit risk historically has been decided by huma
 ![fig2](http://zliobaite.github.io/assets/fig_risk_income.png)
 ![fig3](http://zliobaite.github.io/assets/fig_income_age.png)
 
-<img src="http://zliobaite.github.io/assets/fig_income_age.png" width="200" height="200" /> 
-
 Now the bank is making a model for deciding upon credit risk automatically. 
 
 income is distributed uniformly from 1000 to 6000. Suppose credit risk recorded in the historical data has been decided by human analysts according to an implicit rule: 
