@@ -23,7 +23,9 @@ Here is a toy example. Suppose credit risk historically has been decided by huma
 
 ![fig1](http://zliobaite.github.io/assets/fig_risk_age.png)
 ![fig2](http://zliobaite.github.io/assets/fig_risk_income.png)
-![fig3](http://zliobaite.github.io/assets/fig_income_age.png) 
+![fig3](http://zliobaite.github.io/assets/fig_income_age.png)
+
+<img src="http://zliobaite.github.io/assets/fig_income_age.png" width="200" height="200" /> 
 
 Now the bank is making a model for deciding upon credit risk automatically. 
 
