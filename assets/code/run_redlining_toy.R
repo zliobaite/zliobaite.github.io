@@ -11,7 +11,7 @@ th <- (age-20)/20/2 + 0.5
 income <- income*th
 risk <- 0.8*(10000-income)/10000 + 0.2*(40-age)/20 
 
-png('fig_risk_income.png',width = 400, height = 400)
+png('fig_risk_income.png',width = 280,height = 300)
 plot(income,risk,pch = 20,xlab = 'income',ylab = 'risk')
 dev.off()
 
