@@ -19,23 +19,24 @@ All is fine if the other input variables are independent from age, but that's ra
 
 If there was no age bias in the hitorical credit risk data then no problem. But if in there is an undesired age bias beyond what is explained by income, for instance, due to biased decisions in the past, then the credit scoring model would pick up those biases from the data even if age is removed from the model. 
 
-Here is a toy example. Suppose credit risk historically has been decided by human analysts presuming that younger clients have higher risk, clients with higher income have lower risk. The older the person, the highr the income, as in the pictures. 
+Here is a toy example. Suppose credit risk historically has been decided by human analysts presuming that younger clients have higher risk, and clients with lower income have higher risk. In the data income is related to age. 
 
 ![fig1](http://zliobaite.github.io/assets/fig_risk_age.png)
 ![fig2](http://zliobaite.github.io/assets/fig_risk_income.png)
 ![fig3](http://zliobaite.github.io/assets/fig_income_age.png)
 
 Now the bank is making a model for deciding upon credit risk automatically. 
+If we fit a linear regression model on income and age, we get:
 
-income is distributed uniformly from 1000 to 6000. Suppose credit risk recorded in the historical data has been decided by human analysts according to an implicit rule: 
+	risk = -0.08*income - 0.01*age + 1.20.
+	
+Actually, the true model under which I generated the data is captured. But the age component is undesired and needs to be removed.
 
-	risk = 0.8*(6000-income)/5000 + 0.2(age - 30)/50. 
+If age is removed from the data and a linear regression is learned, we get:
 
-The higher the income, the lower the risk. The older the person, the higher the risk. Toy example. 
+	risk = -0.087*income + 0.930.
+	
+Not good. The coefficient at income is exaggerated, information about age is indirectly captured via income. Income serves as a digital red line. 
 
-
-
-
-Income serves as a digital red line. 
-Therefore, removing the protected characteristic is not enough to ensure 
+Therefore, removing the protected characteristic is not enough, because that does not necessarily remove biases associated with it from decision making. 
 
