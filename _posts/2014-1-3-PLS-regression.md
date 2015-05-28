@@ -1,7 +1,7 @@
 ---
 layout: post
 category : data-streams
-tags : [data streams,agorithm,adaptation]
+tags : [data streams,algorithm,adaptation]
 title : PLS regression 
 ---
 {% include JB/setup %}
