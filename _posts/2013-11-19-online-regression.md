@@ -1,7 +1,7 @@
 ---
 layout: post
 category : data-streams
-tags : [streaming data,regression,online learning]
+tags : [data streams,regression,algorithm]
 title : Online regression 
 ---
 {% include JB/setup %}

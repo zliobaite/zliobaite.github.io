@@ -1,7 +1,7 @@
 ---
 layout: post
 category : puzzles
-tags : [sample bias, paradox]
+tags : [bias,paradox,indirect discrimination]
 title : Berkson's paradox
 ---
 {% include JB/setup %}

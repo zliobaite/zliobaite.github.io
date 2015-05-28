@@ -1,7 +1,7 @@
 ---
 layout: post
 category : fairness
-tags : [predictive modeling, discrimination, bias, fairness in machine learning, discrimination-aware data mining, indirect discrimination]
+tags : [indirect discrimination,paper]
 title : Data-driven decision making may discriminate
 ---
 {% include JB/setup %}

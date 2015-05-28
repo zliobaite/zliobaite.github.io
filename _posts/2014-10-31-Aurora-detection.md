@@ -1,7 +1,7 @@
 ---
 layout: post
 category : open-data
-tags : [northern lights, Aurora Borealis, Svalbard, detection]
+tags : [case study,predictive model,vizualization,Svalbard]
 title : Detecting auroras in all-sky camera images
 ---
 {% include JB/setup %}

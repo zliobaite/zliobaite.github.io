@@ -1,7 +1,7 @@
 ---
 layout: post
 category : puzzles
-tags : [transportation, traffic jam, paradox,TrafficSense]
+tags : [TrafficSense,traffic,paradox]
 title : Braess's paradox
 ---
 {% include JB/setup %}

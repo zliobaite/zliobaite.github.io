@@ -1,7 +1,7 @@
 ---
 layout: post
 category : fairness
-tags : [propensity models, sample bias, discrimination-aware data mining]
+tags : [bias,indirect discrimination]
 title : Propensity models
 ---
 {% include JB/setup %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 category : smart-cities
-tags : [GIS, transportation]
+tags : [algorithm,geo]
 title : Distance between two geographical coordinates
 ---
 {% include JB/setup %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 category : data-streams
-tags : [streaming data,regression,online learning,concept drift,adaptive algorithms]
+tags : [data streams,regression,algorithm,adaptation]
 title : Online adaptive regression 
 ---
 {% include JB/setup %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 category : fairness
-tags : [redlining,lending,data mining]
+tags : [indirect discrimination,banking]
 title : Digital redlining
 ---
 {% include JB/setup %}

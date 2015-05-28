@@ -1,7 +1,7 @@
 ---
 layout: post
 category : open-data
-tags : [Seimo rinkimai, mds, clustering]
+tags : [case study,clustering,visualization,lietuviškai]
 title : Seimo rinkimų balsavimo analizė
 ---
 {% include JB/setup %}

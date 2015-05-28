@@ -1,7 +1,7 @@
 ---
 layout: post
 category : fairness
-tags : [digital discrimination, machine learning, data mining, fairness, AirBnB, net neutrality, data discrimination]
+tags : [indirect discrimination,AirBnB]
 title : What is digital discrimination?
 ---
 {% include JB/setup %}

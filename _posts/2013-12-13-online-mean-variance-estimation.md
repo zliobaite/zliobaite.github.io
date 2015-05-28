@@ -1,7 +1,7 @@
 ---
 layout: post
 category : data-streams
-tags : [streaming data,online learning,adaptive algorithms]
+tags : [data streams,adaptation,algorithm]
 title : Online adaptive estimation of mean and variance
 ---
 {% include JB/setup %}

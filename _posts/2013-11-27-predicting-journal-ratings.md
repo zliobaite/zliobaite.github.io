@@ -1,7 +1,7 @@
 ---
 layout: post
 category : open-data
-tags : [prediction, JUFO ranking, publications]
+tags : [case study,publishing,predictive model]
 title : Predicting ratings of academic journals based on titles
 ---
 {% include JB/setup %}
