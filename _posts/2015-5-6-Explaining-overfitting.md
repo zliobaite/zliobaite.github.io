@@ -1,7 +1,7 @@
 ---
 layout: post
 category : lessons
-tags : [teaching,vizualization]
+tags : [teaching,visualization]
 title : How to explain overfitting to a non-specialist?
 ---
 {% include JB/setup %}
