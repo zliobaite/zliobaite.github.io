@@ -1,8 +1,8 @@
 ---
 layout: post
 category : fairness 
-tags : [review,press,indirect discrimination]
-title : In the media -- ways to preserve fairness when algorithms are making decisions
+tags : [review,article,indirect discrimination]
+title : Press: ways to preserve fairness when algorithms are making decisions
 ---
 {% include JB/setup %}
 

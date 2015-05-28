@@ -1,7 +1,7 @@
 ---
 layout: post
 category : smart-cities
-tags : [TrafficSense,traffic,banking,FourSquare,Helsinki]
+tags : [TrafficSense,traffic,banking,FourSquare,Helsinki,mobile sensing]
 title : Apartment prices in Helsinki relate to accessibility by public transport
 ---
 {% include JB/setup %}

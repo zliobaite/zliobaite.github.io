@@ -1,7 +1,7 @@
 ---
 layout: post
 category : fairness
-tags : [indirect discrimination,paper]
+tags : [indirect discrimination,article]
 title : Data-driven decision making may discriminate
 ---
 {% include JB/setup %}
