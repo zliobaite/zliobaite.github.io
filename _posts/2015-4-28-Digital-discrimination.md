@@ -1,7 +1,7 @@
 ---
 layout: post
 category : fairness
-tags : [indirect discrimination,AirBnB]
+tags : [indirect discrimination]
 title : What is digital discrimination?
 ---
 {% include JB/setup %}

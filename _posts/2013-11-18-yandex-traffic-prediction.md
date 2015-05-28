@@ -1,7 +1,7 @@
 ---
 layout: post
 category : smart-cities
-tags : [Yandex,traffic,data streams,adaptation,predictive model]
+tags : [traffic,data streams,adaptation,predictive model]
 title : Adaptive learning for traffic prediction by Yandex
 ---
 {% include JB/setup %}

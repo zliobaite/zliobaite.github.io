@@ -1,7 +1,7 @@
 ---
 layout: post
 category : open-data
-tags : [case study,predictive model,visualization,Svalbard]
+tags : [case study,predictive model,visualization,research visit]
 title : Detecting auroras in all-sky camera images
 ---
 {% include JB/setup %}
