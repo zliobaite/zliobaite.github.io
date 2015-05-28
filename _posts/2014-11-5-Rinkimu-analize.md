@@ -1,6 +1,6 @@
 ---
 layout: post
-category : applications
+category : open-data
 tags : [Seimo rinkimai, mds, clustering]
 title : Seimo rinkimų balsavimo analizė
 ---

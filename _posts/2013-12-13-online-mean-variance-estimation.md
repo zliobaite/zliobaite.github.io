@@ -1,6 +1,6 @@
 ---
 layout: post
-category : algorithms
+category : data-streams
 tags : [streaming data,online learning,adaptive algorithms]
 title : Online adaptive estimation of mean and variance
 ---

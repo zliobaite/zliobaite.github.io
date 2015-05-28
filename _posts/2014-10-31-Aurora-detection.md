@@ -1,6 +1,6 @@
 ---
 layout: post
-category : applications
+category : open-data
 tags : [northern lights, Aurora Borealis, Svalbard, detection]
 title : Detecting auroras in all-sky camera images
 ---

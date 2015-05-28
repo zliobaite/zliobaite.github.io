@@ -1,6 +1,6 @@
 ---
 layout: post
-category : algorithms
+category : data-streams
 tags : [streaming data,regression,online learning]
 title : Online regression 
 ---

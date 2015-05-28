@@ -1,6 +1,6 @@
 ---
 layout: post
-category : algorithms
+category : data-streams
 tags : [streaming data,regression,online learning,concept drift,adaptive algorithms]
 title : PLS regression 
 ---

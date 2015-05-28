@@ -1,6 +1,6 @@
 ---
 layout: post
-category : discrimination
+category : fairness
 tags : [redlining,lending,data mining]
 title : Digital redlining
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-category : discrimination
+category : fairness
 tags : [propensity models, sample bias, discrimination-aware data mining]
 title : Propensity models
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
-category : applications
-tags : [heatmaps, visualization, Helsinki]
+category : smart-cities
+tags : [heatmaps, visualization, Helsinki,TrafficSense]
 title : Heatmaps for visualizing events over time on a map
 ---
 {% include JB/setup %}

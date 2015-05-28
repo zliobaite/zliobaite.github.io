@@ -1,6 +1,6 @@
 ---
 layout: post
-category : applications
+category : smart-cities
 tags : [prediction,adaptive algorithms,streaming data,Yandex,traffic]
 title : Adaptive learning for traffic prediction by Yandex
 ---

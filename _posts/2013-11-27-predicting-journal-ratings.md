@@ -1,6 +1,6 @@
 ---
 layout: post
-category : applications
+category : open-data
 tags : [prediction, JUFO ranking, publications]
 title : Predicting ratings of academic journals based on titles
 ---

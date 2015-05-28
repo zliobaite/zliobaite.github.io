@@ -1,6 +1,6 @@
 ---
 layout: post
-category : applications
+category : smart-cities
 tags : [GIS, transportation]
 title : Distance between two geographical coordinates
 ---

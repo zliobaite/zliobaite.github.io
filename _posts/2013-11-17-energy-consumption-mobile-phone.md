@@ -1,8 +1,8 @@
 ---
 title : How much energy does a mobile phone consume?
-category : applications
+category : smart-cities
 layout: post
-tags : [mobile sensing,FUNF,battery]
+tags : [mobile sensing,FUNF,battery,TrafficSense]
 ---
 <head>
 <script type="text/x-mathjax-config">
