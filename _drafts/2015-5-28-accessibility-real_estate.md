@@ -14,8 +14,8 @@ First we define static and dynamic points of interest in the city. Static points
 
 ![POI1](http://zliobaite.github.io/assets/points_of_interest1.png) 
 ![POI2](http://zliobaite.github.io/assets/points_of_interest2.png)
-*<small> blue 2:00-6:00, violet 6:00-10:00, red 10:00-14:00, brown 14:00-18:00, orange
-18:00-22:00.</small>*
+*<small> Right plot: blue 2:00-6:00, violet 6:00-10:00, red 10:00-14:00, brown 14:00-18:00, orange 18:00-22:00.</small>* <br>
+*<small>Maps are credited to © [OpenStreetMap](http://www.openstreetmap.org/copyright) contributors.</small>*
 
 Apartment data with asked sales prices comes from advertisements at [Oikotie](http://asunnot.oikotie.fi/). 
 We define two types of accessibility features for each apartment: air distance to points of interest, el time by public transport to the nearest point of interest. For computing travel times we use a [Reititin tool](http://blogs.helsinki.fi/saavutettavuus/tyokaluja/metropaccess-reititin/). 
@@ -34,3 +34,4 @@ Here is the paper:
 Žliobaitė, I., Mathioudakis, M., Lehtiniemi, T., Parviainen, P., Janhunen, T. (2015). [Accessibility by public transport predicts residential real estate prices: a case study in Helsinki region](http://www.zliobaite.com/paper_realestate.pdf). Proc. of the 2nd workshop on Mining Urban Data (MUD2).
 
 And we have made [our dataset](http://www.zliobaite.com/datahel.zip) publicly available for research.
+
