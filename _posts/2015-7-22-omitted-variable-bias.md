@@ -30,8 +30,8 @@ where bar means the mean, and hat means estimated from data.
 
 The coefficient $\hat{b}^\star_1$ here describes how many euros a person gets for one extra year of education. Let's look closer. Plugging in the true underlying model we get 
 
-$$ \hat{b}^\star_1 = \frac{\hat{\mathit{Cov}}(x,b_0 + b_1x + b_2s + e)}{\hat{\mathit{Var}}(x)} = $$ 
-$$ = \frac{\hat{\mathit{Cov}}(x,b_0)}{\hat{\mathit{Var}}(x)} 
+$$ \hat{b}^\star_1 = \frac{\hat{\mathit{Cov}}(x,b_0 + b_1x + b_2s + e)}{\hat{\mathit{Var}}(x)} 
+= \frac{\hat{\mathit{Cov}}(x,b_0)}{\hat{\mathit{Var}}(x)} 
 + \frac{b_1\hat{\mathit{Cov}}(x,x)}{\hat{\mathit{Var}}(x)} 
 + \frac{b_2\hat{\mathit{Cov}}(x,s)}{\hat{\mathit{Var}}(x)}
 + \frac{\hat{\mathit{Cov}}(x,e)}{\hat{\mathit{Var}}(x)} = b_1 + \frac{b_2\hat{\mathit{Cov}}(x,s)}{\hat{\mathit{Var}}(x)}$$
