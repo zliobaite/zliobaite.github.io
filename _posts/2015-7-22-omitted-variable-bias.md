@@ -30,11 +30,12 @@ where bar means the mean, and hat means estimated from data.
 
 The coefficient $\hat{b}^\star_1$ here describes how many euros a person gets for one extra year of education. Let's look closer. Plugging in the true underlying model we get 
 
-$$ \hat{b}^\star_1 = \frac{\hat{\mathit{Cov}}(x,b_0 + b_1x + b_2s + e)}{\hat{\mathit{Var}}(x)} 
-= \frac{\hat{\mathit{Cov}}(x,b_0)}{\hat{\mathit{Var}}(x)} 
+$$ \hat{b}^\star_1 = \frac{\hat{\mathit{Cov}}(x,b_0 + b_1x + b_2s + e)}{\hat{\mathit{Var}}(x)} =$$
+
+$$= \frac{\hat{\mathit{Cov}}(x,b_0)}{\hat{\mathit{Var}}(x)} 
 + \frac{b_1\hat{\mathit{Cov}}(x,x)}{\hat{\mathit{Var}}(x)} 
 + \frac{b_2\hat{\mathit{Cov}}(x,s)}{\hat{\mathit{Var}}(x)}
-+ \frac{\hat{\mathit{Cov}}(x,e)}{\hat{\mathit{Var}}(x)} = b_1 + \frac{b_2\hat{\mathit{Cov}}(x,s)}{\hat{\mathit{Var}}(x)}$$
++ \frac{\hat{\mathit{Cov}}(x,e)}{\hat{\mathit{Var}}(x)} = b_1 + \frac{b_2\hat{\mathit{Cov}}(x,s)}{\hat{\mathit{Var}}(x)}.$$
 
 If race is omitted, $\hat{b}^\star_1$ contains a bias, which does not go away even if we collect infinitely many observations for training the model. There would be no bias only in case the true $b_2 = 0$, that is, there was no discrimination in decision making, or $\mathit{Cov}}(x,s) = 0$, that is, race is not related to education. But if, for instance, black people tend to have lower education, then the regression model would 'punish' low education even further by offering even lower wages for people with low education (who are mostly black).
 
