@@ -23,7 +23,7 @@ $$\frac{size(A \cap B)}{size(A \cup B)}$$.
 
 Dice is computed as 
 
-$$\frac{2 size(A \cap B)}{size(A) + size(B)}.$$
+$$\frac{2 size(A \cap B)}{size(A) + size(B)}$$.
 
 Dice is the same as F1 score in inrofmation retrieval. 
 
