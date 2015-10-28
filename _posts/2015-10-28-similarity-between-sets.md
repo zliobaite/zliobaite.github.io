@@ -17,13 +17,10 @@ title : Measuring similarity between sets in paleontological analysis
 
 One big topic in paleontological data analysis is comparing similarities of sets of species found in different geographc areas and coming from different times. A set of species, for example, is {wolf, rabbit, raindeer}. For measuring similarity, standard and specifically developed indices are used, the most popular of which are: Dice, Jaccard, Simpson, Raup-Crick. 
 
-Suppose we have two sets A and B. 
-
-Jaccard index is computed as $$\frac{1|A \cap B|}{|A \cup B|}$$.
+Suppose we have two sets A and B. Jaccard index is computed as $$\frac{|A \cap B|}{|A \cup B|}$$.
 
 Dice is computed as $$\frac{2|A \cap B|}{|A| + |B|}.$$
 Dice is the same as F1 score in inrofmation retrieval. 
-
 Simpson intex is computed as $$\frac{|A \cap B|}{min(|A|,|B|)}$$.
 
 Raup-Crick index is computed using a randomization procedure and is based on the probability of observing at least $$|A \cap B|$$  shared species in the compared communities. 
@@ -38,14 +35,11 @@ Anyaway, those similarity measures are symmetric. Similarity of a site of intere
 Often the goal is to compare species occurrence to specific reference sites. That is, researchers may be interested in how species from the reference sites are reflected in other sites. Since other sites may have different amounts of extra species, which will show as deviations in the standard (symmetric) similarity measures, commonly used measures are not the most informative for this purpose.
 
 Thus, for measuring asymmetric similarity the Tversky index [1] can be used. It compares a variant to a prototype. The Tversky index is computed as 
+$$\frac{|A \cap B|}{|A \cap B| + a|A - B|+ b|B - A|}$$, where $$|A - B|$$ is the number of species in A, but not in B, and $$a,b \geq 0$$ are user defined weights. 
 
-$$\frac{|A \cap B|}{|A \cap B| + a|A - B|+ b|B - A|}$$,
+Interestingly, the Tversky index is a generalization of Dice and Jaccard coefficients, where setting the weights to $$a=b=0.5$$ gives Dice, and $$a=b=1$$ gives Jaccard. 
 
-where $|A - B|$ is the number of species in A, but not in B, and $a,b \geq 0$ are user defined weights. 
-
-Interestingly, the Tversky index is a generalization of Dice and Jaccard coefficients, where setting the weights to $a=b=0.5$ gives Dice, and $a=b=1$ gives Jaccard. 
-
-Suppose A is the reference site, and B is a new site. Then Tversky index for comparing to the reference site uses $a=0.5$ and $b=0$, which means that the measure is similar to Dice, except that the extra species on the new sites are not included. This serves the purpose to focus on comparison to prototype sites.
+Suppose A is the reference site, and B is a new site. Then Tversky index for comparing to the reference site uses $$a=0.5$$ and $$b=0$$, which means that the measure is similar to Dice, except that the extra species on the new sites are not included. This serves the purpose to focus on comparison to prototype sites.
 
 [1] Tversky, Amos (1977). Features of Similarity. Psychological Reviews 84 (4): 327–352.
 
@@ -53,11 +47,7 @@ Suppose A is the reference site, and B is a new site. Then Tversky index for com
 
 All the indexes above, except for Raup-Crick, are based only on observed presence, but not on absence. That is, species that are present in neither, but possible, are not considered. 
 
-Possible measures to take into account absence in paleontology are based on Forbes index [2]
-
-$$\frac{|A \cap B||C|}{|A||B|}$$,
-
-where C is a set of all species, including spcies in A, species in B, and species in neither A and B. Forbex index can go above 1. 
+Possible measures to take into account absence in paleontology are based on Forbes index [2] $$\frac{|A \cap B||C|}{|A||B|}$$, where C is a set of all species, including spcies in A, species in B, and species in neither A and B. Forbex index can go above 1. 
 
 In principle, classification accuracy measures could be used to capture absence. For example, the Kappa statistic.
 
