@@ -19,12 +19,12 @@ One big topic in paleontological data analysis is comparing similarities of sets
 
 Suppose we have two sets A and B. 
 
-Jaccard index is computed as $$\frac{|A \cap B|}{|A \cup B|}$$.
+Jaccard index is computed as $$\frac{1|A \cap B|}{|A \cup B|}$$.
 
 Dice is computed as $$\frac{2|A \cap B|}{|A| + |B|}.$$
 Dice is the same as F1 score in inrofmation retrieval. 
 
-Simpson intex is computed as $$\frac{|A \cap B|}{\mathit{min}(|A|,|B|)}$$.
+Simpson intex is computed as $$\frac{|A \cap B|}{min(|A|,|B|)}$$.
 
 Raup-Crick index is computed using a randomization procedure and is based on the probability of observing at least $$|A \cap B|$$  shared species in the compared communities. 
 
