@@ -19,14 +19,14 @@ One big topic in paleontological data analysis is comparing similarities of sets
 
 Suppose we have two sets A and B. 
 
-Jaccard index is computed as $$\frac{|A \cap B|}{|A \cup B|}.$$
+Jaccard index is computed as $$\frac{|A \cap B|}{|A \cup B|}$$.
 
 Dice is computed as $$\frac{2|A \cap B|}{|A| + |B|}.$$
 Dice is the same as F1 score in inrofmation retrieval. 
 
 Simpson intex is computed as $$\frac{|A \cap B|}{\mathit{min}(|A|,|B|)}$$.
 
-Raup-Crick index is computed using a randomization procedure and is based on the probability of observing at least $|A \cap B|$  shared species in the compared communities. 
+Raup-Crick index is computed using a randomization procedure and is based on the probability of observing at least $$|A \cap B|$$  shared species in the compared communities. 
 
 More details are available in the [PAST manual](http://folk.uio.no/ohammer/past/), which is a softwae for paleontological data analysis.
 
@@ -39,7 +39,7 @@ Often the goal is to compare species occurrence to specific reference sites. Tha
 
 Thus, for measuring asymmetric similarity the Tversky index [1] can be used. It compares a variant to a prototype. The Tversky index is computed as 
 
-$$\frac{|A \cap B|}{|A \cap B| + a|A - B|+ b|B - A|},$$
+$$\frac{|A \cap B|}{|A \cap B| + a|A - B|+ b|B - A|}$$,
 
 where $|A - B|$ is the number of species in A, but not in B, and $a,b \geq 0$ are user defined weights. 
 
@@ -55,7 +55,7 @@ All the indexes above, except for Raup-Crick, are based only on observed presenc
 
 Possible measures to take into account absence in paleontology are based on Forbes index [2]
 
-$$\frac{|A \cap B||C|}{|A||B|},$$
+$$\frac{|A \cap B||C|}{|A||B|}$$,
 
 where C is a set of all species, including spcies in A, species in B, and species in neither A and B. Forbex index can go above 1. 
 
