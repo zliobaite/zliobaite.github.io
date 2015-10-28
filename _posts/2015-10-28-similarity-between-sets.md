@@ -17,11 +17,19 @@ title : Measuring similarity between sets in paleontological analysis
 
 One big topic in paleontological data analysis is comparing similarities of sets of species found in different geographc areas and coming from different times. A set of species, for example, is {wolf, rabbit, raindeer}. For measuring similarity, standard and specifically developed indices are used, the most popular of which are: Dice, Jaccard, Simpson, Raup-Crick. 
 
-Suppose we have two sets A and B. Jaccard index is computed as $$\frac{size(A \cap B)}{size(A \cup B)}$$.
+Suppose we have two sets A and B. Jaccard index is computed as 
 
-Dice is computed as $$\frac{2 size(A \cap B)}{size(A) + size(B)}.$$
+$$\frac{size(A \cap B)}{size(A \cup B)}$$.
+
+Dice is computed as 
+
+$$\frac{2 size(A \cap B)}{size(A) + size(B)}.$$
+
 Dice is the same as F1 score in inrofmation retrieval. 
-Simpson intex is computed as $$\frac{size(A \cap B)}{min(size(A),size(B))}$$.
+
+Simpson intex is computed as 
+
+$$\frac{size(A \cap B)}{min(size(A),size(B))}$$.
 
 Raup-Crick index is computed using a randomization procedure and is based on the probability of observing at least $$size(A \cap B)$$  shared species in the compared communities. 
 
@@ -35,7 +43,10 @@ Anyaway, those similarity measures are symmetric. Similarity of a site of intere
 Often the goal is to compare species occurrence to specific reference sites. That is, researchers may be interested in how species from the reference sites are reflected in other sites. Since other sites may have different amounts of extra species, which will show as deviations in the standard (symmetric) similarity measures, commonly used measures are not the most informative for this purpose.
 
 Thus, for measuring asymmetric similarity the Tversky index [1] can be used. It compares a variant to a prototype. The Tversky index is computed as 
-$$\frac{size(A \cap B)}{size(A \cap B) +  size(A - B)\alpha+  size(B - A)\beta}$$, where $$size(A - B)$$ is the number of species in A, but not in B, and $$\alpha,\beta \geq 0$$ are user defined weights. 
+
+$$\frac{size(A \cap B)}{size(A \cap B) +  size(A - B)\alpha+  size(B - A)\beta}$$, 
+
+where $$size(A - B)$$ is the number of species in A, but not in B, and $$\alpha,\beta \geq 0$$ are user defined weights. 
 
 Interestingly, the Tversky index is a generalization of Dice and Jaccard coefficients, where setting the weights to $$\alpha=\beta=0.5$$ gives Dice, and $$\alpha=\beta=1$$ gives Jaccard. 
 
