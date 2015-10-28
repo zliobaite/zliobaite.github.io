@@ -1,7 +1,7 @@
 ---
 layout: post
 category : collaborations
-tags : [paleontology, Tversky index]
+tags : [paleontology,Tversky index,Raup-Crick]
 
 title : Measuring similarity between sets in paleontological analysis
 ---
@@ -65,4 +65,8 @@ In principle, classification accuracy measures could be used to capture absence.
 
 ### Performance ###
 
-I did a simulation to check how all these measures perform. There is a base model where $|A| = 200x$, $|B| = 200x$, $|C| = 400x$, $|A \cap B| = 100x$, $x = 1$, and for each test some assumption is relaxed. Here is my code in R. 
+I did a simulation to check how all these simmetric measures (no Tversky) perform. There is a base model where $|A| = 200x$, $|B| = 200x$, $|C| = 400x$, $|A \cap B| = 100x$, $x = 1$, and for each test some assumption is relaxed. [Here](http://zliobaite.github.io/assets/run_sim.R) is my code in R. 
+
+![](http://zliobaite.github.io/assets/fig_similarity.png)
+
+The figure shows that the sensitive area of Raup-Crick is very narrow, it basically acts as a classifier saying similar or not similar. Forbes sometimes goes off the chart. Kappa goes negative in cases the verlap is less than would be expected at random. Dice, Simpson and Jaccard act consistently and similarly. I would perhaps use Dice in many cases. Dice is the same as F1. 

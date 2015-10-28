@@ -112,6 +112,6 @@ points(res4[,1],res4[,4],col='red',lwd = 3)
 lines(res4[,1],res4[,5],col='green',lwd = 3)
 lines(res4[,1],res4[,6],col='brown',lwd = 3)
 lines(res4[,1],res4[,2],col='black',lwd = 3)
-legend(0.1,1.54,c('Raup','Jacc','Dice','Sim','Forb','Kapp'),col = c('black','blue','red','green','brown','yellow'),lty = 1, cex = 0.4)
+legend(0.1,1.54,c('Raup','Jacc','Dice','Sim','Forb','Kapp'),col = c('black','blue','red','green','brown','yellow'),lty = 1, cex = 0.8)
 dev.off()
 
