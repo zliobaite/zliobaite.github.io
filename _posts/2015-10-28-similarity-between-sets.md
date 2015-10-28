@@ -15,7 +15,7 @@ title : Measuring similarity between sets in paleontological analysis
 
 ### Symmetric similarity measures ###
 
-One big topic in paleontological data analysis is comparing similarities of sets of species found in different geographc areas and coming from different times. A set of species, for example, is {wolf,rabbit,raindeer}. For measuring similarity, standard and specifically developed indices are used, the most popular of which are: Dice, Jaccard, Simpson, Raup-Crick. 
+One big topic in paleontological data analysis is comparing similarities of sets of species found in different geographc areas and coming from different times. A set of species, for example, is {wolf, rabbit, raindeer}. For measuring similarity, standard and specifically developed indices are used, the most popular of which are: Dice, Jaccard, Simpson, Raup-Crick. 
 
 Suppose we have two sets A and B. 
 
@@ -65,7 +65,7 @@ In principle, classification accuracy measures could be used to capture absence.
 
 ### Performance ###
 
-I did a simulation to check how all these simmetric measures (no Tversky) perform. There is a base model where $|A| = 200x$, $|B| = 200x$, $|C| = 400x$, $|A \cap B| = 100x$, $x = 1$, and for each test some assumption is relaxed. [Here](http://zliobaite.github.io/assets/run_sim.R) is my code in R. 
+I did a simulation to check how all these simmetric measures (no Tversky) perform. There is a base model where $$|A| = 200x$$, $$|B| = 200x$$, $$|C| = 400x$$, $$|A \cap B| = 100x$$, $$x = 1$$, and for each test some assumption is relaxed. [Here](http://zliobaite.github.io/assets/run_sim.R) is my code in R. 
 
 ![](http://zliobaite.github.io/assets/fig_similarity.png)
 
