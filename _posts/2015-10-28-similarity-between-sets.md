@@ -58,7 +58,11 @@ Suppose A is the reference site, and B is a new site. Then Tversky index for com
 
 All the indexes above, except for Raup-Crick, are based only on observed presence, but not on absence. That is, species that are present in neither, but possible, are not considered. 
 
-Possible measures to take into account absence in paleontology are based on Forbes index [2] $$\frac{size(A \cap B)size(C)}{size(A)size(B)}$$, where C is a set of all species, including spcies in A, species in B, and species in neither A and B. Forbex index can go above 1. 
+Possible measures to take into account absence in paleontology are based on Forbes index [2] 
+
+$$\frac{size(A \cap B)size(C)}{size(A)size(B)}$$, 
+
+where C is a set of all species, including spcies in A, species in B, and species in neither A and B. Forbex index can go above 1. 
 
 In principle, classification accuracy measures could be used to capture absence. For example, the Kappa statistic.
 
