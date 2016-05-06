@@ -29,4 +29,4 @@ where
 
 $$R^2_{\mathit{naive}} = 1 - \frac{n^2}{(n-1)^2}$$,
 
-where $n$ is the number of data points.
+where $$n$$ is the number of data points.
