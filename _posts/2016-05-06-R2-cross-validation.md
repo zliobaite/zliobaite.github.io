@@ -2,9 +2,15 @@
 layout: post
 category : collaborations
 tags : [R2,cross-validation,paleontology]
-title : Normalizing $$R^2$$ for using with cross-validation
+title : Normalizing R2 for using with cross-validation
 ---
 {% include JB/setup %}
+
+<head>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
 
 The coefficient of determination, denoted as $$R^2$$
 , is commonly used in evaluating the performance of
