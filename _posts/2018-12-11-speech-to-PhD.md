@@ -2,7 +2,7 @@
 layout: post
 category : research
 tags : [Helsinki,students]
-title : My address to PhD studdents
+title : My address to PhD students
 ---
 {% include JB/setup %}
 
