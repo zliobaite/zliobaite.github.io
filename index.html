@@ -1,36 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1671.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #0000e3; -webkit-text-stroke: #0000e3}
-    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-    span.s2 {text-decoration: underline ; font-kerning: none; color: #0000e3; -webkit-text-stroke: 0px #0000e3}
-    span.s3 {-webkit-text-stroke: 0px #000000}
-    span.s4 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
-    ul.ul1 {list-style-type: disc}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">--- layout: default title: Research and Stuff header: Welcome --- {% include JB/setup %}</span></p>
-<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Welcome</b></span></h3>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1">My name is Indrė Žliobaitė. I'm posting bits and pieces related to research that I do. See my <a href="http://www.zliobaite.com/"><span class="s2">website </span></a>for more info about my research.<span class="Apple-converted-space"> </span></span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>Recent Posts</b></span></h3>
-<ul class="ul1">
-  <li class="li1"><span class="s3"></span><span class="s1">{% for post in site.posts limit: 20 %}</span></li>
-  <li class="li1"><span class="s3"></span><span class="s1">{{ post.date | date_to_string }} » <a href="file:///Users/indre/zliobaite.github.com/%7B%7B%20post.url%20%7D%7D"><span class="s2">{{ post.title }}</span></a><span class="Apple-converted-space"> </span></span></li>
-  <li class="li1"><span class="s3"></span><span class="s1">{% endfor %}<span class="Apple-converted-space"> </span></span></li>
+---
+layout: default
+title: Research and Stuff
+header: Welcome
+---
+{% include JB/setup %}
+
+<h3>Welcome</h3>
+
+<br>
+
+My name is Indr&#279; &#381;liobait&#279;. 
+I'm posting bits and pieces related to data science that I do. 
+See my <a href="http://www.zliobaite.com"> website </a> for more info about my research. 
+<br><br>
+
+
+<h3>Recent Posts</h3>
+<ul>
+  {% for post in site.posts limit: 10 %}
+    <li>
+    {{ post.date | date_to_string }} &raquo; 
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
 </ul>
-<p class="p3"><span class="s4"><b>Check out </b><a href="file:///Users/indre/zliobaite.github.com/%7B%7B"><span class="s2">older posts.</span></a></span></p>
-</body>
-</html>
+
+<b> Check out </b> <a href={{ site.baseurl }}/archive.html>older posts.</a>
