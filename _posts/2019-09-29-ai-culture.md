@@ -16,7 +16,7 @@ As hopes for general human-like AI go up and down [2,13], it is becoming clear t
 
 Want your robot vacuum cleaner to adhere to your culture? Bring it to the National library to learn from [17] all the local books. Or only from the nice ones.
 
-##References
+### References ###
 
 1. R. Wrangham and R. Carmody. Human adaptation to the control of fire. Evolutionary Anthropology, 19(5):187--199, 2010.
 2. G. Marcus and E. Davis. Rebooting AI. Penguin Random House, 2019.
