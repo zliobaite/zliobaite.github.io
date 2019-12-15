@@ -1,7 +1,7 @@
 ---
 layout: post
 category : nature
-tags : [Palaeontology]
+tags : [paleontology]
 title : How about privacy preserving palaeontology?
 ---
 {% include JB/setup %}
