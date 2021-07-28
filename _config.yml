@@ -9,8 +9,8 @@ rouge: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Matters arising
-tagline: research and stuff
+title : Research and Stuff
+tagline: welcome!
 author : 
   name : Indr&#279; &#381;liobait&#279;
   email : zliobaite at gmail com
@@ -22,7 +22,7 @@ author :
   stackoverflow : inzl
   linkedin : indrė-žliobaitė
   
-description : Research blog in data mining. Currently focuses on fairness (non-discrimination) in data mining and machine learning.   
+description : Research blog.   
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
