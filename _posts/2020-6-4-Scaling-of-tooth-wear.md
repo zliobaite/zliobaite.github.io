@@ -2,7 +2,7 @@
 layout: post
 category : academia
 tags : [teeth,research]
-title : Scaling of tooth wear rates of mammalian herbivores: what is the baseline?
+title : Scaling of tooth wear rates of mammalian herbivores&#58; what is the baseline&#63;
 ---
 {% include JB/setup %}
 
