@@ -10,4 +10,4 @@ We get rejections all the time. I've had perhaps hundreds of them over the years
 
 I made it available online as a technical report together with both reviews attached until I decide what's next. Welcome!
 
-Žliobaitė, I. (2020). [Tooth wear rates of mammalian herbivores revisited: what is the baseline?](Technical report) Technical report. 
+Žliobaitė, I. (2020). [Tooth wear rates of mammalian herbivores revisited: what is the baseline?](https://drive.google.com/file/d/1iLysEdV1fjWLK1UMNFXgym18NFqrifxU/view?usp=sharing) Technical report. 
