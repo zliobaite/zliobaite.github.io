@@ -1,7 +1,7 @@
 ---
 layout: post
-category : academia
-tags : [research]
+category : fossils
+tags : [paleontology,fossils]
 title : Trends in human evolution research&#58; part 1 -- analysis 
 ---
 {% include JB/setup %}
