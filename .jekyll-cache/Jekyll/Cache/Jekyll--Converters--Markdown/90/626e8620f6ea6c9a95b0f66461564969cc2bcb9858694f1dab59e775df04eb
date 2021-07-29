@@ -1,0 +1,33 @@
+I"X
+<head>
+<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+</head>
+
+<p>I wrote a beginners guide to time information in the fossil record. I used my tablecloths as illustrations. It begins like this:</p>
+
+<p>What is the fossil record, you wonder? It is a facebook of life history and it has stories to tell. It knows which animals socialized with which millions of years ago, what they ate for their dinner and how they got into various troubles.</p>
+
+<p>Fossils are organisms from the past imprinted in rock, palaeontologists find them and keep the record. The term fossil record refers to everything that is known, yet the actual record is scattered over many sources. Just like there is no single global social network, there is no single fossil database, there are many. My closest to home <a href="https://nowdatabase.org/">fossil database</a> records which fossil mammal species lived where in the world over the last 50 or so millions of years. Data data everywhere.</p>
+
+<p>The rest of the article is  <a href="https://medium.com/@zliobaite/the-nature-of-time-information-in-the-fossil-record-83bb97d45372">here</a>, on Medium.</p>
+:ET

@@ -1,0 +1,62 @@
+I"G
+<head>
+<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+</head>
+
+<p>Back in the days American banks used to draw maps redlining the areas in which they don’t want to lend. Hence the term <em>redlining</em>.</p>
+
+<p><img src="http://zliobaite.github.io/assets/redlining.jpg" alt="Redlining" /> 
+<em><small> “Home Owners’ Loan Corporation Philadelphia redlining map”. Licensed under Public Domain via <a href="http://en.wikipedia.org/wiki/File:Home_Owners%27_Loan_Corporation_Philadelphia_redlining_map.jpg#/media/File:Home_Owners%27_Loan_Corporation_Philadelphia_redlining_map.jpg">Wikipedia</a></small></em></p>
+
+<p>The problem was that those redlined neighbourhoods were typically populated by racial minorities. Even though banks were not using race information for denying credits directly, the policy was affecting racial minorities worse than others.</p>
+
+<p>Digital redlining is the same but with algorithms. For example, nowadays banks are not allowed to use age in credit scoring models. So the first thing a bank decides is to remove the age variable from the intputs (true story).</p>
+
+<p>All is fine if the other input variables are independent from age, but that’s rarely the case. Age may be correlated, for instance, with income. Income is a valid predictor for credit scoring, so it can be part of the model. What happens next?</p>
+
+<p>If there was no age bias in the hitorical credit risk data then no problem. But if in there is an undesired age bias beyond what is explained by income, for instance, due to biased decisions in the past, then the credit scoring model would pick up those biases from the data even if age is removed from the model.</p>
+
+<p>Here is a toy example. Suppose credit risk historically has been decided by human analysts presuming that younger clients have higher risk, and clients with lower income have higher risk. In the data income is related to age.</p>
+
+<p><img src="http://zliobaite.github.io/assets/fig_risk_age.png" alt="fig1" />
+<img src="http://zliobaite.github.io/assets/fig_risk_income.png" alt="fig2" />
+<img src="http://zliobaite.github.io/assets/fig_income_age.png" alt="fig3" /></p>
+
+<p>Now the bank is making a model for deciding upon credit risk automatically. 
+If we fit a linear regression model on income and age, we get:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>risk = -0.08*income - 0.01*age + 1.20.
+</code></pre></div></div>
+
+<p>Actually, the true model under which I generated the data is captured. But the age component is undesired and needs to be removed.</p>
+
+<p>If age is removed from the data and a linear regression is learned, we get:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>risk = -0.087*income + 0.930.
+</code></pre></div></div>
+
+<p>Not good. The coefficient at income is exaggerated, information about age is indirectly captured via income. Income serves as a digital red line.</p>
+
+<p>Therefore, removing the protected characteristic is not enough, because that does not necessarily remove biases associated with it from decision making.</p>
+
+:ET

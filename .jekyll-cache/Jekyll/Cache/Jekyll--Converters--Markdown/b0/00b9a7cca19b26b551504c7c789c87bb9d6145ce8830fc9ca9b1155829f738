@@ -1,0 +1,35 @@
+I"x
+<head>
+<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+</head>
+
+<p>Because more time is spent being overtaken by other vehicles than is spent in overtaking them, that’s what a <a href="http://www.nature.com/nature/journal/v401/n6748/abs/401035a0.html">Nature paper</a> points out.</p>
+
+<p><img src="http://zliobaite.github.io/assets/traffic_jam.png" alt="Traffic jam" /></p>
+
+<p>Indeed, here is an example. Suppose there are two lanes on the way to work. One lane moves twice faster than the other. Say, the distance to work is <strong>10 km</strong>,  the speed on the slow lane is <strong>25 km/h</strong>, then the speed of the fast lane is <strong>50 km/h</strong>. So the travel time to work over the slow lane is <strong>24 min</strong>, the travel time over the fast lane is <strong>12 min</strong>.</p>
+
+<p>A driver does not know which one is which, so every morning s/he choses a lane at random. Suppose s/he works <strong>20</strong> days per month, out of which in the expectation <strong>10 days</strong> s/he would arrive by the fast lane, and <strong>10 days</strong> by the slow lane. The total travel time spent while traveling on the fast lane would be <strong>2 hours</strong>, and the time on the slow lane would be <strong>4 hours</strong>. The driver would be spending <strong>2/3</strong> out of all the travel time  on the slow lane and watching cars on the other lane pass by.</p>
+
+<p>Even though the chances of ending up on a slow or fast lane are the same, more time is spent on the slow lane, hence, more time is spent observing that the other lane is going faster. So that is why it seems for the driver that s/he is  unlucky when chosing lanes.</p>
+:ET

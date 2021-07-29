@@ -1,0 +1,35 @@
+I""
+<head>
+<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+</head>
+
+<p>I explain like this.</p>
+
+<p><img src="http://zliobaite.github.io/assets/overfitting1.jpg" alt="OVerfitting" /></p>
+
+<p><img src="http://zliobaite.github.io/assets/overfitting2.jpg" alt="OVerfitting" /></p>
+
+<p><img src="http://zliobaite.github.io/assets/overfitting3.jpg" alt="OVerfitting" /></p>
+
+<p>I came up with this explanation when working at Bournemouth University in south England. I thought students needed an example from everyday life. Bournemouth is a resort town and has a long beach.</p>
+:ET

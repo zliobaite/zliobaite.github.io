@@ -1,0 +1,27 @@
+I")
+<head>
+<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+</head>
+
+<p>I wrote a blog post in Nature Ecology and Evolution on the occasion of Alexander von Humboldt’s 250th birthday – [Greetings from now to then]{https://natureecoevocommunity.nature.com/users/72730-indre-zliobaite/posts/53507-humboldt-anniversary}.</p>
+:ET

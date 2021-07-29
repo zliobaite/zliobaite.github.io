@@ -1,0 +1,31 @@
+I"�
+<head>
+<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+</head>
+
+<p>We get rejections all the time. I’ve had perhaps hundreds of them over the years, jobs, funding applications, research papers. But this one somehow got me off guard. This was a small scale study prepared over Christmas break and sent to a local journal. And it got unlistened to, hopelessly.</p>
+
+<p>I made it available online as a technical report together with both reviews attached until I decide what’s next. Welcome!</p>
+
+<p>Žliobaitė, I. (2020). <a href="https://drive.google.com/file/d/1iLysEdV1fjWLK1UMNFXgym18NFqrifxU/view?usp=sharing">Tooth wear rates of mammalian herbivores revisited: what is the baseline?</a> Technical report.</p>
+:ET

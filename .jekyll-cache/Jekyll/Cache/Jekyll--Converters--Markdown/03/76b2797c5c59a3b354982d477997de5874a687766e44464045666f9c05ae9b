@@ -1,0 +1,138 @@
+I"¸
+<head>
+<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+</head>
+
+<head>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+<p>Partial Least Squares (PLS) regression is popular in chemometrics, but not so well known in data streams. It is a linear regression model. Data is projected into lower dimensional space, and a regression model is produced.</p>
+
+<p>PLS regression has nice properties for streaming data analysis. It can be updated recursively, and it can adapt over time.</p>
+
+<p><strong>Batch model.</strong> There is no closed form solution for producing a model, therefore, an iterative optimization procedure is used.</p>
+
+<p>Let \(\mathbf{X}\) be a \(n \times r\) matrix of input data, where each line is an observation. Let \(\mathbf{y}\) be an \(n \times 1\) vector of the target values, corresponding to the observations in \(\mathbf{X}\). Assume that the data is standardized prior to the analysis to zero mean and unit variance. Let \(k\) be a parameter indicating the dimensionality of the projected data, such that \(0 &lt; k &lt; r\).</p>
+
+<p>Initialize: \(\mathbf{E}_0 = \mathbf{X}\) and \(\mathbf{u}_0 = \mathbf{y}\).</p>
+
+<p>Loop: repeat the following steps for \(i=1\) to \(k\):</p>
+
+<ol>
+  <li>
+\[\mathbf{w}_i = \mathbf{E}^T_{i-1}\mathbf{u}_{i-1}/(\mathbf{u}_{i-1}^T\mathbf{u}_{i-1})\]
+  </li>
+  <li>
+\[w_i = w_i/ \sqrt{w_i^Tw_i}\]
+  </li>
+  <li>
+\[\mathbf{t} = \mathbf{X}\mathbf{w}_i\]
+  </li>
+  <li>
+\[q = \mathbf{u}^T_{i-1}\mathbf{t}/(\mathbf{t}^T\mathbf{t})\]
+  </li>
+  <li>
+\[\mathbf{u}_i = \mathbf{u}_{i-1}\]
+  </li>
+  <li>
+\[\mathbf{p}_i = \mathbf{E}^T_{i-1}\mathbf{t}/(\mathbf{t}^T\mathbf{t})\]
+  </li>
+  <li>
+\[\mathbf{E}_i = \mathbf{E}_{i-1} - \mathbf{t}\mathbf{p}_i^T\]
+  </li>
+  <li>
+\[\mathbf{u}_i = \mathbf{u}_{i-1} - \mathbf{t}q_i\]
+  </li>
+</ol>
+
+<p>Collect the results into matrixes:
+\(\mathbf{W} = (\mathbf{w}_1,\ldots,\mathbf{w}_k)\), 
+\(\mathbf{P} = (\mathbf{p}_1,\ldots,\mathbf{p}_k)\), and
+\(\mathbf{q} = (q_1,\ldots,q_k)^T\).</p>
+
+<p>In Python the iterative optimization procedure can be implemented as follows, assuming data and labels are in the numpy array format.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import numpy as np
+def nipals(data,labels,k):
+r = np.shape(data)[1]
+W = np.zeros((k,components))
+P = np.zeros((k,components))
+Q = np.zeros(components)
+for i in range(k):
+	w = np.dot(data.T,u)*1.0/np.dot(u.T,u)
+	wnorm = np.sqrt(np.dot(w.T,w))
+	w = w*1.0 / wnorm
+	t = np.dot(data,w)
+	tt = np.dot(t.T,t)
+	q = np.dot(t.T,labels)*1.0/tt
+	u = labels
+	p = np.dot(data.T,t)*1.0/tt
+	data = data - np.outer(t,p)
+	labels = labels - t*q
+	W[:,i] = w
+	P[:,i] = p
+	Q[i] = q
+return P,W,Q
+</code></pre></div></div>
+
+<p><strong>Prediction.</strong> Predictions for unseen data can be made as \(\hat{y} = \mathbf{x}^T\beta\), where \(\beta = \mathbf{W}(\mathbf{P}^T\mathbf{W})^{-1}\mathbf{q}\).</p>
+
+<p>In Python prediction can be implemented as follows.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>model = np.dot(np.dot(W,np.linalg.pinv(np.dot(P.T,W))),Q)
+</code></pre></div></div>
+
+<p><strong>Online update.</strong> For updating the regression model with new observations we need to store \(\mathbf{P}\) and \(\mathbf{q}\). When a new labeled observation \(\mathbf{x},y\) arrives, a training dataset is constructed as 
+\(\mathbf{E}_0 = (\mathbf{P},\mathbf{x})^T\) and \(\mathbf{u}_0 = (\mathbf{q},y)^T\). Then the batch learning procedure (specified above) is applied to the constructed dataset.</p>
+
+<p>In Python:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def update_PLS(P,Q,data,labels):
+	k = np.shape(P)[1]
+	data_new = np.vstack((P.T,data))
+	label_new = np.hstack((Q,labels))
+	P,W,Q = nipals(data_new,label_new,k)
+	return P,W,Q
+</code></pre></div></div>
+
+<p><strong>Online adaptation.</strong> When data distribution is evolving over time, it may be useful to include a forgetting factor. In such a case the update procedure is the similar, but the training datasets are constructed as
+\(\mathbf{E}_0 = (\alpha\mathbf{P},\mathbf{x})^T\) and 
+\(\mathbf{u}_0 = (\alpha\mathbf{q},y)^T\), 
+where \(\alpha \in (0,1)\) is the forgetting factor. 
+\(\alpha = 1\) would correspond to no forgetting at all. 
+The lower \(\alpha\), the faster the forgetting.</p>
+
+<p>In Python:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def update_PLS(P,Q,data,labels):
+	k = np.shape(P)[1]
+	data_new = np.vstack((alfa*P.T,data))
+	label_new = np.hstack((alfa*Q,labels))
+	P,W,Q = nipals(data_new,label_new,k)
+	return P,W,Q
+</code></pre></div></div>
+
+<p><strong>More details</strong> can be found in, for instance, <a href="http://cariparo.dei.unipd.it/documents/corso_psc_07-08/identificazionetermodinamica/articolipls/recursive-pls-algorithms-for-adaptive-data-modeling.pdf">this paper</a> by S. Qin from 1998.</p>
+:ET
