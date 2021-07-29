@@ -5,16 +5,8 @@ tags : [data streams,regression,algorithm]
 title : Online regression 
 ---
 {% include JB/setup %}
-<head>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-});
-</script>
-<script type="text/javascript"
- src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-</head>
+
+
 
 Linear regression models assume that the relationship between $r$ input variables $X = (x_1,x_2,\ldots,x_r)$ and the target variable $y$ is linear in the form
 $$

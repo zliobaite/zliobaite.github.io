@@ -12,7 +12,7 @@ Yandex provides [congestion maps](http://maps.yandex.ru/traffic), that include t
 
 **Data.** GPS_tracks from users of Yandex maps and navigation service. GPS-tracks are mapped onto the road graph. Average speed over each edge at a give time interval is taken.
 
-**Predictive model.** Linear autoregression that takes current and near past speeds on the same edge as inputs, as well as speeds in the neighborhood. 
+**Predictive model.** Linear autoregression that takes current and near past speeds on the same edge as inputs, as well as speeds in the neighbourhood. 
 
 **Learning, adaptation and prediction.** A new model is learned once per day. Different models are used for different times of day. New prediction are casted every 10 min taking new incoming GPS-traces into consideration. 
 
