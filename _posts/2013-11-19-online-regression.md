@@ -7,7 +7,6 @@ title : Online regression
 {% include JB/setup %}
 
 
-
 Linear regression models assume that the relationship between $r$ input variables $X = (x_1,x_2,\ldots,x_r)$ and the target variable $y$ is linear in the form
 $$
 y = b_1x_1 + b_2x_2 + \ldots + b_kx_k + e = XB + e,
@@ -26,8 +25,7 @@ All we need to keep in memory is the vector of regression coefficients $B$ (whic
 
 When at time $t$ observation $X_t$ with the corresponding  true target value $y_t$ becomes available, the model is updated as follows:
 $$
-\mathbf{S}_t^{-1} = \mathbf{S}_{t-1}^{-1}
-- \frac{\mathbf{S}_{t-1}^{-1}X_t^TX_t\mathbf{S}_{t-1}^{-1}}{1 + X_t\mathbf{S}_{t-1}^{-1}X_t^T},
+\mathbf{S}_t^{-1} = \mathbf{S}_{t-1}^{-1} - \frac{\mathbf{S}_{t-1}^{-1}X_t^TX_t\mathbf{S}_{t-1}^{-1}}{1 + X_t\mathbf{S}_{t-1}^{-1}X_t^T},
 $$
 and
 $$
