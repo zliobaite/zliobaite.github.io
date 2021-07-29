@@ -37,8 +37,7 @@ Here are more detailed results. The recall of rating 2-3 journals is quite low, 
 		
 	avg		0.65      	0.73	0.66
 
-
-The results above are based on the assumption that any misclassification is equally bad. We can also compute cost-weighted classification error, where the cost of misclassification is defined as |true - predicted|. For example, misclassifying a journal of rating 2 as rating 1 carries cost of 1, but misclassifying the same journal as rating 0 carries cost 2. 
+The results above are based on the assumption that any misclassification is equally bad. We can also compute cost-weighted classification error, where the cost of misclassification is defined as $$|$$true - predicted$$|$$. For example, misclassifying a journal of rating 2 as rating 1 carries cost of 1, but misclassifying the same journal as rating 0 carries cost 2. 
 
 The mean cost weighted error of our classifier is 0.33, while random classifier gives 0.57. This means that our classification is about 50% better than random, so there is some predictive power in the titles after all. 
 
