@@ -2,7 +2,7 @@
 layout: post
 category : lessons
 comments : false
-tags : [blog,how to]
+tags : [how-to]
 ---
 {% include JB/setup %}
 
@@ -58,7 +58,7 @@ Therefore if you like to keep things simple and you prefer the command-line over
 
 **Developers like Jekyll because we can write content like we write code:**
 
-- Ability to write content in markdown or textile in your favorite text-editor.
+- Ability to write content in markdown or textile in your favourite text-editor.
 - Ability to write and preview your content via localhost.
 - No internet connection required.
 - Ability to publish via git.
@@ -154,7 +154,7 @@ Posts are created by properly formatting a file and placing it the `_posts` fold
 
 **Formatting**
 A post must have a valid filename in the form `YEAR-MONTH-DATE-title.MARKUP` and be placed in the `_posts` directory.
-If the data format is invalid Jekyll will not recognize the file as a post. The date and title are automatically parsed from the filename of the post file.
+If the data format is invalid Jekyll will not recognise the file as a post. The date and title are automatically parsed from the filename of the post file.
 Additionally, each file must have [YAML Front-Matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter) prepended to its content.
 YAML Front-Matter is a valid YAML syntax specifying meta-data for the given file.
 
@@ -167,10 +167,10 @@ Since the date is hard-coded into the filename format, to change the order, you 
 **Tags**
 Posts can have tags associated with them as part of their meta-data.
 Tags may be placed on posts by providing them in the post's YAML front matter.
-You have access to the post-specific tags in the templates. These tags also get added to the sitewide collection.
+You have access to the post-specific tags in the templates. These tags also get added to the site-wide collection.
 
 **Categories**
-Posts may be categorized by providing one or more categories in the YAML front matter.
+Posts may be categorised by providing one or more categories in the YAML front matter.
 Categories offer more significance over tags in that they can be reflected in the URL path to the given post.
 Note categories in Jekyll work in a specific way.
 If you define more than one category you are defining a category hierarchy "set".
