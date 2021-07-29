@@ -4,30 +4,7 @@ category : smart-cities
 layout: post
 tags : [TrafficSense,mobile sensing,energy]
 ---
-<head>
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: [
-      "MathMenu.js",
-      "MathZoom.js",
-      "AssistiveMML.js",
-      "a11y/accessibility-menu.js"
-    ],
-    jax: ["input/TeX", "output/CommonHTML"],
-    TeX: {
-      extensions: [
-        "AMSmath.js",
-        "AMSsymbols.js",
-        "noErrors.js",
-        "noUndefined.js",
-      ]
-    }
-  });
-</script>
-</head>
+{% include JB/setup %}
 
 We have a new project, called [TrafficSense](https://cse.aalto.fi/research/groups/distributed-systems-group/projects/trafficsense/). One of the goals is to infer and predict movement patterns of people using mobile sensing for better efficiency in transportation. 
 
