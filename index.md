@@ -9,4 +9,4 @@ layout: home
 mathjax : true
 ---
 
-{% for category in site.categories %} • [{{category|first}}]({{ site.baseurl }}/{{category|first}}) {% endfor %}
+{% for category in site.categories %} • [{{category|first}}]({{ site.baseurl }}/category/{{category|first}}) {% endfor %}
