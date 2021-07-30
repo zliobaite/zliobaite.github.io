@@ -27,7 +27,7 @@ layout: default
       {%- endif -%}
       {% for category in page.categories %}
         {% if category == page.categories[0] %} • {% endif %}
-        <span itemprop="category"><a href="/{{ category }}">{{ category }}</a></span>
+        <span itemprop="category"><a href="/category/{{ category }}">{{ category }}</a></span>
       {% endfor %}
       </p>
   </header>

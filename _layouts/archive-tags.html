@@ -7,7 +7,10 @@ title: Archive
 
 <ul class="post-list">
   {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-  {% for post in page.posts %}
+  
+  
+  {% for post in site.posts %}
+  {% if post.tags contains page.tag or post.tag == page.tag %}
   <li>
     <span class="post-meta">{{ post.date | date: date_format }}</span>
     <h3>
@@ -16,5 +19,8 @@ title: Archive
       </a>
     </h3>
   </li>
+  {% endif %}
+
   {% endfor %}
+
 </ul>
