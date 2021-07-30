@@ -1,7 +1,7 @@
 ---
 layout: post
-category : smart-cities
-tags : [algorithm,geo]
+category : cities
+tags : [algorithm,cities]
 title : Distance between two geographical coordinates
 mathjax : true
 ---

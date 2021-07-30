@@ -1,7 +1,7 @@
 ---
 layout: post
 category : fairness
-tags : [indirect discrimination,banking]
+tags : [indirectdiscrimination,banking]
 title : Digital redlining
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 category : fairness
-tags : [indirect discrimination]
+tags : [discrimination,machinelearning,evaluation]
 title : A survey on measuring indirect discrimination in machine learning
 ---
 

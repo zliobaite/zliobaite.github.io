@@ -1,7 +1,7 @@
 ---
 layout: post
-category : smart-cities
-tags : [traffic,data streams,adaptation,predictive model]
+category : cities
+tags : [traffic,datastreams,conceptdrift]
 title : Adaptive learning for traffic prediction by Yandex
 ---
 

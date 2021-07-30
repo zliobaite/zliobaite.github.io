@@ -1,7 +1,7 @@
 ---
 layout: post
-category : collaborations
-tags : [paleontology,Tversky index,Raup-Crick]
+category : evolution
+tags : [palaeontology,Tversky,Raup-Crick,evaluation,fossils]
 mathjax : true
 title : Measuring similarity between sets in paleontological analysis
 ---

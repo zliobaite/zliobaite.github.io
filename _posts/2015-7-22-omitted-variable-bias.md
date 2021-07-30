@@ -1,7 +1,7 @@
 ---
 layout: post
 category : fairness
-tags : [regression,bias,indirect discrimination]
+tags : [regression,bias,indirectdiscrimination,machinelearning]
 title : Omitted variable bias and discrimination
 mathjax : true
 ---

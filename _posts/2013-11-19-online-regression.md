@@ -1,7 +1,7 @@
 ---
 layout: post
-category : data-streams
-tags : [data streams,regression,algorithm]
+category : machine-learning
+tags : [datastreams,regression,conceptdrift]
 title : Online regression 
 mathjax: true
 ---

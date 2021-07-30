@@ -1,6 +1,6 @@
 ---
 layout: post
-category : smart-cities
+category : cities
 tags : [TrafficSense,Helsinki,visualization]
 title : Heatmaps for visualizing events over time on a map
 ---

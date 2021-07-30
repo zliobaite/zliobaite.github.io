@@ -1,7 +1,7 @@
 ---
 layout: post
 category : open-data
-tags : [case study,predictive model,visualization,research visit]
+tags : [visualization,research,datascience]
 title : Detecting auroras in all-sky camera images
 ---
 

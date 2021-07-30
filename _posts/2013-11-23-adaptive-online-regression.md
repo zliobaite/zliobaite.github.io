@@ -1,7 +1,7 @@
 ---
 layout: post
-category : data-streams
-tags : [data streams,regression,algorithm,adaptation]
+category : machine-learning
+tags : [datastreams,regression,conceptdrift]
 title : Online adaptive regression 
 mathjax : true
 ---

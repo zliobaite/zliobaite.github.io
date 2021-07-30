@@ -1,7 +1,7 @@
 ---
 layout: post
 category : open-data
-tags : [case study,publishing,predictive model]
+tags : [publishing,machinelearning,datascience]
 title : Predicting ratings of academic journals based on titles
 ---
 

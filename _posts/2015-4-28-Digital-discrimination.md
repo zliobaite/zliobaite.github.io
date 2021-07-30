@@ -1,7 +1,7 @@
 ---
 layout: post
 category : fairness
-tags : [indirect discrimination]
+tags : [indirectdiscrimination]
 title : What is digital discrimination?
 ---
 

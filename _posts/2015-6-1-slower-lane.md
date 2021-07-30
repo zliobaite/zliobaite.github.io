@@ -1,7 +1,7 @@
 ---
 layout: post
-category : puzzles
-tags : [traffic]
+category : cities
+tags : [traffic,puzzles,datascience]
 title : Why cars in the next lane seem to go faster
 ---
 

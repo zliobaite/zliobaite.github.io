@@ -1,7 +1,7 @@
 ---
 layout: post
-category : nature
-tags : [Alexander von Humboldt]
+category : evolution
+tags : [people,nature,AI]
 title : Happy birthday Alexander von Humboldt
 ---
 

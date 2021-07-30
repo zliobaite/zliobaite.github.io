@@ -1,7 +1,7 @@
 ---
 layout: post
 category : open-data
-tags : [case study,clustering,visualization,lietuviškai]
+tags : [datascience,clustering,cities,visualization,lietuviškai]
 title : Seimo rinkimų balsavimo analizė
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-category : lessons
-tags : [teaching,visualization]
+category : machine-learning
+tags : [teaching,visualization,machinelearning]
 title : How to explain overfitting to a non-specialist?
 ---
 

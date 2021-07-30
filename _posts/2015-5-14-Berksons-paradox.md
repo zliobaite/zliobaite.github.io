@@ -1,7 +1,7 @@
 ---
 layout: post
-category : puzzles
-tags : [bias,paradox,indirect discrimination]
+category : fairness
+tags : [bias,puzzles,indirectdiscrimination]
 title : Berkson's paradox
 ---
 

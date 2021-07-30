@@ -1,7 +1,7 @@
 ---
 layout: post
-category : puzzles
-tags : [TrafficSense,traffic,paradox,cities]
+category : cities
+tags : [TrafficSense,traffic,puzzles,cities]
 title : Braess's paradox
 ---
 

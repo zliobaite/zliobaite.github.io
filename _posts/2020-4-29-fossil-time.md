@@ -1,6 +1,6 @@
 ---
 layout: post
-category : fossils
+category : evolution
 tags : [fossils,time,research,NOWdatabase]
 title : The nature of time information in the fossil record
 ---

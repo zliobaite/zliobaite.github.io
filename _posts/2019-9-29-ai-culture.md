@@ -1,7 +1,7 @@
 ---
 layout: post
-category : AI
-tags : [AI,culture]
+category : philosophy
+tags : [AI,art,machinelearning]
 title : There will be no single AI culture
 ---
 

@@ -46,9 +46,9 @@ minima:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
-# - about2.md
+header_pages:
+ - about.md
+ - archive.md
 
 # Build settings
 theme: minima
@@ -56,12 +56,19 @@ theme: minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+ - jekyll-archives
 
-# Settings for analytics helper
-# Set 'provider' to the analytics provider you want to use.
-# Set 'provider' to false to turn analytics off globally.
-#
-analytics :
-    provider : google
-    google :
-        tracking_id : 'UA-62399911-1'
+
+# Google Analytics
+google_analytics: UA-62399911-1
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: '/tag/:name/'
+    category: '/:name/'

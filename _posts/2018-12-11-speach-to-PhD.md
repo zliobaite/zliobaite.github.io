@@ -1,7 +1,7 @@
 ---
 layout: post
-category : research
-tags : [Helsinki,students]
+category : philosophy
+tags : [Helsinki,students,research]
 title : My address to PhD students
 ---
 

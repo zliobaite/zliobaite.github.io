@@ -1,7 +1,7 @@
 ---
 layout: post
-category : collaborations
-tags : [R2,cross-validation,paleontology]
+category : machine-learning
+tags : [machinelearning,crossvalidation,paleontology,research]
 title : Normalizing R2 for using with cross-validation
 mathjax : true
 ---

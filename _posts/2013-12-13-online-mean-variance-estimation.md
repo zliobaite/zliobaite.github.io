@@ -1,7 +1,7 @@
 ---
 layout: post
-category : data-streams
-tags : [data streams,adaptation,algorithm]
+category : machine-learning
+tags : [datastreams,conceptdrift]
 title : Online adaptive estimation of mean and variance
 mathjax : true
 ---

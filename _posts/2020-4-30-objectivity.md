@@ -1,7 +1,7 @@
 ---
 layout: post
-category : data-science
-tags : [fossils,objectivity,research, data science]
+category : philosophy
+tags : [fossils,palaeontology,objectivity,research,philosophy,datascience,machinelearning]
 title : Can data speak for themselves?
 ---
 

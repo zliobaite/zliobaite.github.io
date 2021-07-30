@@ -1,7 +1,7 @@
 ---
 layout: post
-category : nature
-tags : [fossils]
+category : evolution
+tags : [fossils,NOWdatabase,evolution,research,RedQueen,papers]
 title : Do species age?
 ---
 

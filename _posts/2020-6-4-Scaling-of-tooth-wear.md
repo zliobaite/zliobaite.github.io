@@ -1,8 +1,8 @@
 ---
 layout: post
-category : academia
-tags : [teeth,research]
-title : Scaling of tooth wear rates
+tags: [teeth,palaeontology,evolution,research]
+category: evolution
+title: Scaling of tooth wear rates
 ---
 
 We get rejections all the time. I've had perhaps hundreds of them over the years, jobs, funding applications, research papers. But this one somehow got me off guard. This was a small scale study prepared over Christmas break and sent to a local journal. And it got unlistened to, hopelessly.

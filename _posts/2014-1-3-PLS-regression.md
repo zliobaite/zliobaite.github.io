@@ -1,7 +1,7 @@
 ---
 layout: post
-category : data-streams
-tags : [data streams,algorithm,adaptation]
+category : machine-learning
+tags : [datastreams,conceptdrift]
 title : PLS regression 
 mathjax : true
 ---
