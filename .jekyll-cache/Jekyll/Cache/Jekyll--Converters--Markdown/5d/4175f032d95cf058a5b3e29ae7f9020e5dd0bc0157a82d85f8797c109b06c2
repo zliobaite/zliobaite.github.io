@@ -1,0 +1,16 @@
+I"�<p>The coefficient of determination, denoted as \(R^2\), is commonly used in evaluating the performance of predictive models, particularly in life sciences. It indicates what proportion of variance in the target variable is explained by model predictions.</p>
+
+<p>\(R^2\) takes values between minus infinity and one, the higher – the better. 
+If tested on the same data as the model was fitted, zero means that the performance is the same as naïve baseline always predicting a constant.</p>
+
+<p>When using \(R^2\) with leave-one-out cross-validation, we need to normalise the score as otherwise the naïve baseline is below zero (more details can be found in our <a href="http://arxiv.org/abs/1605.01703">ArXiv note</a>). 
+The normalisation depends only on the number of data points in cross-validation, and is</p>
+
+<p>$R^2_{\mathit{CV}} = \frac{R^2 - R^2_N}{1 - R^2_N}$,</p>
+
+<p>where</p>
+
+<p>$R^2_N = 1 - \frac{n^2}{(n-1)^2}$,</p>
+
+<p>where $n$ is the number of data points.</p>
+:ET

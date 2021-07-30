@@ -3,14 +3,8 @@ layout: post
 category : data-streams
 tags : [data streams,adaptation,algorithm]
 title : Online adaptive estimation of mean and variance
+mathjax : true
 ---
-{% include JB/setup %}
-
-<head>
-<script type="text/javascript"
- src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-</head>
 
 Suppose we have a random variable $$x$$. Observations arrive in a stream, $$x_t$$ indicates the observation at time $$t$$. If we have access to all the historical observations, the mean is $$\bar{x}_t = \frac{1}{t}\sum_{i=1}^t x_i$$.
 

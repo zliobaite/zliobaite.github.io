@@ -1,0 +1,31 @@
+I"#<p>Traditionally, apartment prices are considered to relate to the apartment characteristics and its location. We had a hypothesis that accessibility of a neighbourhood perhaps is even more important than its location. So we did a <a href="http://www.zliobaite.com/paper_realestate.pdf">pilot study</a> in Helsinki region to check that.</p>
+
+<p>First we define static and dynamic points of interest in the city. Static points of interest are supposed to capture community centres. We find them by locating H&amp;M stores in Helsinki region. Dynamic points of interest are supposed to capture where people go at different times of day. We find those centres by clustering <a href="https://foursquare.com/">FourSquare</a> check-ins.</p>
+
+<p><img src="http://zliobaite.github.io/assets/points_of_interest1.png" alt="POI1" /> 
+<img src="http://zliobaite.github.io/assets/points_of_interest2.png" alt="POI2" />
+<em><small> Right plot: blue 2:00-6:00, violet 6:00-10:00, red 10:00-14:00, brown 14:00-18:00, orange 18:00-22:00.</small></em> <br />
+<em><small>Maps are credited to © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.</small></em></p>
+
+<p>Apartment data with offered sales prices comes from advertisements at <a href="http://asunnot.oikotie.fi/">Oikotie</a>. 
+We define two types of accessibility features for each apartment: air distance to points of interest, and travel time by public transport to the nearest point of interest. For computing travel times we use the <a href="http://blogs.helsinki.fi/saavutettavuus/tyokaluja/metropaccess-reititin/">Reititin tool</a>.</p>
+
+<p>Travel times give quite a different perspective to the neighbourhoods than just considering a distance to the city centre. For example, here is a <a href="http://mak.hsl.fi/">map of travel times</a> to CS building in Otaniemi at 9 o’clock in the morning.</p>
+
+<p><img src="http://zliobaite.github.io/assets/travel_times.png" alt="Travel times" /></p>
+
+<p><em><small> Colours correspond to travel minutes. </small></em></p>
+
+<p>In our study we found that the air distance to the city centre (Stockmann) is more informative about apartment prices than the travel time by public transport to the centre. However, accessibility to the local centres (fixed centres H&amp;M and dynamic centres FourSquare) by public transport is more informative than just the air distance to those centres. In other words, it seems that an apartment
+price relates to the overall geographical location, but accessibility
+to local centres of interest is more important than just the geographical distance to those centres.</p>
+
+<p>Here is the paper:</p>
+
+<ul>
+  <li>Žliobaitė, I., Mathioudakis, M., Lehtiniemi, T., Parviainen, P., Janhunen, T. (2015). <a href="http://www.zliobaite.com/paper_realestate.pdf">Accessibility by public transport predicts residential real estate prices: a case study in Helsinki region</a>. Proc. of the 2nd workshop on Mining Urban Data (MUD2).</li>
+</ul>
+
+<p>And we have made <a href="http://www.zliobaite.com/datahel.zip">our dataset</a> publicly available for research.</p>
+
+:ET

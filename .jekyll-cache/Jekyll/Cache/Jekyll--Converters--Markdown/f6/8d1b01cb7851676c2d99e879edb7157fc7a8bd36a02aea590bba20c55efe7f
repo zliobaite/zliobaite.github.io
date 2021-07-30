@@ -1,0 +1,2 @@
+I"><p>Earlier I wrote about <a href="/data-streams/2013/11/19/online-regression.html">online regression</a>, which receives observations one by one and recursively learns a regression model. We get a the same model, as learning offline on all the training observations. What, if we want the model to adapt over time?</p>
+:ET

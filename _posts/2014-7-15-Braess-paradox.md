@@ -1,14 +1,13 @@
 ---
 layout: post
 category : puzzles
-tags : [TrafficSense,traffic,paradox]
+tags : [TrafficSense,traffic,paradox,cities]
 title : Braess's paradox
 ---
-{% include JB/setup %}
 
 [Braess's paradox](http://en.wikipedia.org/wiki/Braess%27s_paradox) describes a situation in traffic planning, when adding an extra road makes things worse. 
 
-Suppose 4000 drivers want to get from sleeping place to work. There are two routes: first train to station A, and then by car, or first by car to station B and then train. Train trip takes 45 min, and car trip takes N/100 min, where N is the number of cars taking this road. 
+Suppose 4000 drivers want to get from sleeping place to work. There are two routes: first by train to station A, and then by car, or first by car to station B and then by train. The train trip takes 45 min, and the car trip takes N/100 min, where N is the number of cars taking this road. 
 
 Here is how it looks:
 

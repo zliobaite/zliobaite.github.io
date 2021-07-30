@@ -4,7 +4,6 @@ category : AI
 tags : [AI,culture]
 title : There will be no single AI culture
 ---
-{% include JB/setup %}
 
 Artificial intelligence is a part of our culture. Technology is our culture, as is our ability to externalise thoughts and experiences in myths, in laws, in atlases or poetry. Be it for mundane tasks from managing our calendars to our street navigation, shopping lists or information retrieval, AI already externalises our brain, just like learning to control fire externalised our digestion [1].
 

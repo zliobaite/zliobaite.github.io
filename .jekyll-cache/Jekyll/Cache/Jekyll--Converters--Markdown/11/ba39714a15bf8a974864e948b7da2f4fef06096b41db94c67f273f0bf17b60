@@ -1,0 +1,10 @@
+I"2<p>In February, while on winter holiday trip, I visited aurora researchers at <a href="http://www.unis.no/">The University Centre in Svalbard (UNIS)</a>. We talked about machine learning and stuff. They recently set up a colour camera at <a href="http://kho.unis.no/">Kjell Henriksen Observatory</a>, and are interested in detecting and recognising auroras from images in real time.</p>
+
+<p>While on a plane I tried a few quick solutions based on pixel thresholding and pixel clustering, they seem to be working reasonably well.</p>
+
+<p>Here is an example of a threshold based detection:</p>
+
+<p><img src="http://zliobaite.github.io/assets/ex1_aurora_detection.png" alt="Routes1" /></p>
+
+<p>For those, who ar interested to try, I put the code on <a href="https://github.com/zliobaite/Aurora-detection">GitHub</a>.</p>
+:ET

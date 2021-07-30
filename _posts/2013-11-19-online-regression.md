@@ -3,8 +3,8 @@ layout: post
 category : data-streams
 tags : [data streams,regression,algorithm]
 title : Online regression 
+mathjax: true
 ---
-{% include JB/setup %}
 
 
 Linear regression models assume that the relationship between $r$ input variables $X = (x_1,x_2,\ldots,x_r)$ and the target variable $y$ is linear in the form
@@ -12,7 +12,7 @@ $$
 y = b_1x_1 + b_2x_2 + \ldots + b_kx_k + e = XB + e,
 $$where the vector $B = (b_1, b_2,\ldots,b_r)^T$ contains the parameters of the linear model (regression coefficients), and $e$ is a random error.
 
-Simple and common way to estimate the regression parameters from data is to minimize the empirical mean squared error. We take a historical dataset of $n$ observations, where 
+Simple and common way to estimate the regression parameters from data is to minimise the empirical mean squared error. We take a historical dataset of $n$ observations, where 
 $\mathbf{X}  = (X_1^T, X_2^T, \ldots, X_n^T)^T$ and
 $\mathbf{y} = (y_1,y_2,\ldots,y_n)^T$, and have a closed form solution, which is 
 $$

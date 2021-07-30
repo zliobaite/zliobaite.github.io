@@ -4,7 +4,6 @@ category : fairness
 tags : [indirect discrimination,article]
 title : Data-driven decision making may discriminate
 ---
-{% include JB/setup %}
 
 In the era of big data more and more decisions are made using predictive models, built on historical data, for example, automated CV screening of job applicants, credit scoring for loans, or profiling of potential suspects by the police. 
 

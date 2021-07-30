@@ -4,7 +4,6 @@ category : puzzles
 tags : [bias,paradox,indirect discrimination]
 title : Oversampling paradox
 ---
-{% include JB/setup %}
 
 A recent [study](http://cad.sagepub.com/content/early/2014/09/26/0011128714549655.abstract) in criminology points out a major flaw in interpretation by previous studies, which have been suggesting that 50% of offenders released from state prisons return to prison within 3 to 5 years. The study points out that 2/3 of the prisoners actually never return. The figures are overstated due to sampling procedure. If a survey targets prisoners currently serving their sentence, it is biased towards returning prisoners, and not representative of all prisoners. 
 

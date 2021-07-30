@@ -3,8 +3,8 @@ title : How much energy does a mobile phone consume?
 category : smart-cities
 layout: post
 tags : [TrafficSense,mobile sensing,energy]
+mathjax: true
 ---
-{% include JB/setup %}
 
 We have a new project, called [TrafficSense](https://cse.aalto.fi/research/groups/distributed-systems-group/projects/trafficsense/). One of the goals is to infer and predict movement patterns of people using mobile sensing for better efficiency in transportation. 
 

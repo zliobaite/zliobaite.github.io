@@ -4,9 +4,8 @@ category : open-data
 tags : [case study,predictive model,visualization,research visit]
 title : Detecting auroras in all-sky camera images
 ---
-{% include JB/setup %}
 
-In February, while on winter holiday trip, I visited aurora researchers at [The University Centre in Svalbard (UNIS)](http://www.unis.no/). We talked about machine learning and stuff. They recently set up a color camera at [Kjell Henriksen Observatory](http://kho.unis.no/), and are interested in detecting and recognizing auroras from images in real time. 
+In February, while on winter holiday trip, I visited aurora researchers at [The University Centre in Svalbard (UNIS)](http://www.unis.no/). We talked about machine learning and stuff. They recently set up a colour camera at [Kjell Henriksen Observatory](http://kho.unis.no/), and are interested in detecting and recognising auroras from images in real time. 
 
 While on a plane I tried a few quick solutions based on pixel thresholding and pixel clustering, they seem to be working reasonably well. 
 

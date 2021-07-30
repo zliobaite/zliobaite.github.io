@@ -4,7 +4,6 @@ category : lessons
 tags : [teaching,visualization]
 title : How to explain overfitting to a non-specialist?
 ---
-{% include JB/setup %}
 
 I explain like this.
 

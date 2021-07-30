@@ -4,7 +4,6 @@ category : open-data
 tags : [case study,publishing,predictive model]
 title : Predicting ratings of academic journals based on titles
 ---
-{% include JB/setup %}
 
 I was wondering, if a title of an academic journal or conference somehow reflects the (perceived) quality. So I did an experiment.
 
@@ -28,14 +27,14 @@ Three extra features are used: the number of words in the title, the number of s
 
 Here are more detailed results. The recall of rating 2-3 journals is quite low, i.e., not much of them are retrieved and identified correctly.
 
-	labels	precision	recall	f1-score
-	-1	0.61		0.45	0.52
-	0	0.52		0.46	0.49
-	1	0.76		0.95	0.84
-	2	0.32		0.03	0.05
-	3	0.27		0.02	0.04
+	Labels	Precision   Recall  F1-score
+	-1	0.61	    0.45    0.52
+	0	0.52        0.46    0.49
+	1	0.76        0.95    0.84
+	2	0.32        0.03    0.05
+	3	0.27        0.02    0.04
 	---
-	avg	0.65		0.73	0.66
+	Avg.    0.65        0.73    0.66
 
 The results above are based on the assumption that any misclassification is equally bad. We can also compute cost-weighted classification error, where the cost of misclassification is defined as \|true - predicted\|. For example, misclassifying a journal of rating 2 as rating 1 carries cost of 1, but misclassifying the same journal as rating 0 carries cost 2. 
 

@@ -4,7 +4,6 @@ category : open-data
 tags : [case study,clustering,visualization,lietuviškai]
 title : Seimo rinkimų balsavimo analizė
 ---
-{% include JB/setup %}
 
 This post is about analysis of voting data from Lithuanian Parliament elections in 2012. It is in Lithuanian, since, perhaps, it is of little interest to non-Lithuanian speakers. 
 

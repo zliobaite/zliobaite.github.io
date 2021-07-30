@@ -1,0 +1,2 @@
+I"ñ<p>Suppose we have a random variable \(x\). Observations arrive in a stream, \(x_t\) indicates the observation at time \(t\). If we have access to all the historical observations, the mean is \(\bar{x}_t = \frac{1}{t}\sum_{i=1}^t x_i\).</p>
+:ET

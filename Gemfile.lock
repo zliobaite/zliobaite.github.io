@@ -1,3 +1,11 @@
+PATH
+  remote: .
+  specs:
+    minima (2.5.1)
+      jekyll (>= 3.5, < 5.0)
+      jekyll-feed (~> 0.9)
+      jekyll-seo-tag (~> 2.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -66,9 +74,8 @@ PLATFORMS
   x86_64-darwin-19
 
 DEPENDENCIES
-  jekyll
-  jekyll-feed
-  jekyll-seo-tag
+  bundler
+  minima!
   webrick
 
 BUNDLED WITH

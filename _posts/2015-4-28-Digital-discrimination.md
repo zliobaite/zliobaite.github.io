@@ -4,9 +4,8 @@ category : fairness
 tags : [indirect discrimination]
 title : What is digital discrimination?
 ---
-{% include JB/setup %}
 
-Modern forms of discrimination are subtile and difficult to spot, and, perhaps even not intentional. Indirect discrimination is such. Typically, it is a rule or a procedure that puts certain groups of people into a disadvantage. For example, a requirement to fill in a research grant application form in MS Excel puts into a disadvantage users of Linux or Mac OS. Software platform, of course, is not yet a legally recognized ground for discrimination, but it makes a good example. 
+Modern forms of discrimination are subtile and difficult to spot, and, perhaps even not intentional. Indirect discrimination is such. Typically, it is a rule or a procedure that puts certain groups of people into a disadvantage. For example, a requirement to fill in a research grant application form in MS Excel puts into a disadvantage users of Linux or Mac OS. Software platform, of course, is not yet a legally recognised ground for discrimination, but it makes a good example. 
 
 ![Associative picture](http://zliobaite.github.io/assets/ID-100282992.jpg)
 (associative picture)
@@ -15,9 +14,9 @@ Within indirect discrimination, digital discrimination is even more subtle and d
 
 The earliest mention of *digital discrimination* that I can trace is in [a book by D. Lyon](http://books.google.com/books/about/Surveillance_as_Social_Sorting.html?id=yCLFBfZwl08C) from 2003. 
 
-Lately, digital discrimination has also referred to disadvantages *within* services provided on the internet. This usage mainly comes from a [European project ICUD](http://digitaldiscrimination.eu/), their conferences, and collaborators. *Digital discrimination* in this case is not a mechanism for discrimination, but the area of discrimination, just like a work place could be when anayzing equal pay. 
+Lately, digital discrimination has also referred to disadvantages *within* services provided on the internet. This usage mainly comes from a [European project ICUD](http://digitaldiscrimination.eu/), their conferences, and collaborators. *Digital discrimination* in this case is not a mechanism for discrimination, but the area of discrimination, just like a work place could be when analysing equal pay. 
 
-Perhaps the most attention and media coverage towards *digital discrimination* has been captured by a [recent case study](http://www.hbs.edu/faculty/Publication%20Files/14-054_e3c04a43-c0cf-4ed8-91bf-cb0ea4ba59c6.pdf), which discrovers price disadvantages for black people at AirBnB. [AirBnB](https://www.airbnb.com/) is a market place for holiday rentals. AirBnB got a lot of negative publicity with that, here are just some of the titles:
+Perhaps the most attention and media coverage towards *digital discrimination* has been captured by a [recent case study](http://www.hbs.edu/faculty/Publication%20Files/14-054_e3c04a43-c0cf-4ed8-91bf-cb0ea4ba59c6.pdf), which discovers price disadvantages for black people at AirBnB. [AirBnB](https://www.airbnb.com/) is a market place for holiday rentals. AirBnB got a lot of negative publicity with that, here are just some of the titles:
 
 * [Airbnb discrimination? Study finds black hosts charge less on average](http://articles.latimes.com/2014/jan/21/business/la-fi-tn-airbnb-discrimination-20140121) 	Los Angeles Times
 * [Harvard Study Suggests Racial Bias Among Some Airbnb Renters](http://time.com/2345/harvard-study-suggests-racial-bias-among-some-airbnb-renters/) Time

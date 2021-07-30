@@ -5,9 +5,7 @@ tags : [publishing]
 title : Publishing in computer science vs. natural sciences
 ---
 
-{% include JB/setup %}
-
-Publishing culture in computer science is quite different from natural sciences. Here are my impressions as an author and a reviewer in both, and as an editor in computer science (data mining and machine learning). In CS I'm mostly familiar with publishing related to data analysis, in NS I'm familiar with forestry, atmospheric sciences, paleoecology, and medicine domains. Counterexamples can always be founds, but here are general trends that I have observed.
+Publishing culture in computer science is quite different from natural sciences. Here are my impressions as an author and a reviewer in both, and as an editor in computer science (data mining and machine learning). In CS I'm mostly familiar with publishing related to data analysis, in NS I'm familiar with forestry, atmospheric sciences, palaeoecology, and medicine domains. Counterexamples can always be founds, but here are general trends that I have observed.
 
 1. In CS the main publishing is in conference proceedings, in NS - in journals. 
 
@@ -39,4 +37,4 @@ Publishing culture in computer science is quite different from natural sciences.
 
 7. In NS papers have stronger and more stand-alone conclusions.
 
-	In CS (data analysis) conclusions often summarize what has been done, focus on the process of analysis, and list the contributions. In NS conclusions focus on what has been found. In NS conclusions can be used as claims for further research, they can be stand-alone take-home messages. In CS conclusions can rarely be used stand-alone, one has to get back to the actual paper.
+	In CS (data analysis) conclusions often summarise what has been done, focus on the process of analysis, and list the contributions. In NS conclusions focus on what has been found. In NS conclusions can be used as claims for further research, they can be stand-alone take-home messages. In CS conclusions can rarely be used stand-alone, one has to get back to the actual paper.

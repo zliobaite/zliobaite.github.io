@@ -3,14 +3,8 @@ layout: post
 category : data-streams
 tags : [data streams,regression,algorithm,adaptation]
 title : Online adaptive regression 
+mathjax : true
 ---
-{% include JB/setup %}
-
-<head>
-<script type="text/javascript"
- src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-</head>
 
 Earlier I wrote about [online regression]({% post_url 2013-11-19-online-regression %}), which receives observations one by one and recursively learns a regression model. We get a the same model, as learning offline on all the training observations. What, if we want the model to adapt over time? 
 
@@ -26,10 +20,10 @@ $$
 \mathbf{S}_t^{-1} = \frac{1}{\alpha}\left(\mathbf{S}_{t-1}^{-1} - \frac{\mathbf{S}_{t-1}^{-1}X_t^TX_t\mathbf{S}_{t-1}^{-1}}{\alpha + X_t\mathbf{S}_{t-1}^{-1}X_t^T}\right).
 $$
 
-**Initialization.** The model can be initialized as $$\mathbf{S} = \mathbf{I}_{r \times r}$$ (identity matrix, where $$r$$ is the number of input variables) and $$\hat{B} = \mathbf{0}_{r \times 1}$$.
+**Initialisation.** The model can be initialised as $$\mathbf{S} = \mathbf{I}_{r \times r}$$ (identity matrix, where $$r$$ is the number of input variables) and $$\hat{B} = \mathbf{0}_{r \times 1}$$.
 
 **How does it work?**  
-Optimization is based on the loss function
+Optimisation is based on the loss function
 $$C = \sum_{i=1}^t \alpha^{t-i}(y_i - X_iB)^2$$.
 The more recent an observation is, the larger the penalty. The penalty decreases exponentially with the age of examples. 
 

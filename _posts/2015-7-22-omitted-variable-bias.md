@@ -3,43 +3,34 @@ layout: post
 category : fairness
 tags : [regression,bias,indirect discrimination]
 title : Omitted variable bias and discrimination
+mathjax : true
 ---
-{% include JB/setup %}
-
-<head>
-<script type="text/javascript"
- src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-</head>
 
 Omitted variable bias occurs when a regression model is fit leaving out an important causal variable.  
 
 Suppose, we want to model hourly wages $y$ as a function of years of education $x$. Suppose that some form of prejudice exists in the society, and the true wages depend on the race of a person $s$ (0 - white, 1 - black). That is, the true underlying mechanism for deciding wages is
 
-$$ y = b_0 + b_1x + b_2s + e$$.
+$ y = b_0 + b_1x + b_2s + e$.
 
 Now suppose, that a data scientist decides to omit variable $s$ considering that it is discriminatory for wages to depend on the race of a person (removes a sensitive variable from the equation), i.e. assuming that the true underlying model should be 
 
-$$ y = b_0^\star + b_1^\star + e^\star.$$
+$ y = b_0^\star + b_1^\star + e^\star.$
 
 Following the standard [OLS procedure](https://en.wikipedia.org/wiki/Ordinary_least_squares) for estimating regression parameters the data scientist gets
 
-$$ \hat{b}^\star_1 = \frac{\hat{\mathit{Cov}}(x,y)}{\hat{\mathit{Var}}(x)},$$
-$$ \hat{b}_0^\star = \bar{y} - \hat{b}^\star_1\bar{x},$$
+$ \hat{b}^\star_1 = \frac{\hat{\mathit{Cov}}(x,y)}{\hat{\mathit{Var}}(x)},$
+$ \hat{b}_0^\star = \bar{y} - \hat{b}^\star_1\bar{x},$
 where bar means the mean, and hat means estimated from data. 
 
 The coefficient $\hat{b}^\star_1$ here describes how many euros a person gets for one extra year of education. Let's look closer. Plugging in the true underlying model we get 
 
-$$ \hat{b}^\star_1 = \frac{\hat{\mathit{Cov}}(x,b_0 + b_1x + b_2s + e)}{\hat{\mathit{Var}}(x)} =$$
+$ \hat{b}^\star_1 = \frac{\hat{\mathit{Cov}}(x,b_0 + b_1x + b_2s + e)}{\hat{\mathit{Var}}(x)} =$
 
-$$= \frac{\hat{\mathit{Cov}}(x,b_0)}{\hat{\mathit{Var}}(x)} 
-+ \frac{b_1\hat{\mathit{Cov}}(x,x)}{\hat{\mathit{Var}}(x)} 
-+ \frac{b_2\hat{\mathit{Cov}}(x,s)}{\hat{\mathit{Var}}(x)}
-+ \frac{\hat{\mathit{Cov}}(x,e)}{\hat{\mathit{Var}}(x)} = b_1 + \frac{b_2\hat{\mathit{Cov}}(x,s)}{\hat{\mathit{Var}}(x)}.$$
+$= \frac{\hat{\mathit{Cov}}(x,b_0)}{\hat{\mathit{Var}}(x)}  + \frac{b_1\hat{\mathit{Cov}}(x,x)}{\hat{\mathit{Var}}(x)}  + \frac{b_2\hat{\mathit{Cov}}(x,s)}{\hat{\mathit{Var}}(x)} + \frac{\hat{\mathit{Cov}}(x,e)}{\hat{\mathit{Var}}(x)} = b_1 + \frac{b_2\hat{\mathit{Cov}}(x,s)}{\hat{\mathit{Var}}(x)}.$
 
 If race is omitted, $\hat{b}^\star_1$ contains a bias, which does not go away even if we collect infinitely many observations for training the model. There would be no bias only in case the true $b_2 = 0$, that is, there was no discrimination in decision making, or $\mathit{Cov}(x,s) = 0$, that is, race is not related to education. But if, for instance, black people tend to have lower education, then the regression model would 'punish' low education even further by offering even lower wages for people with low education (who are mostly black).
 
 So, removing the protected variable does not make regression models fair, on the contrary, such a strategy is likely to amplify discrimination. 
 
-A better strategy to sanitize regression models would be to learn a regression model on data including the protected variable, and then remove the component with the race altogether, or replace it by a constant that does not depend on the race. 
+A better strategy to sanitise regression models would be to learn a regression model on data including the protected variable, and then remove the component with the race altogether, or replace it by a constant that does not depend on the race. 
 
