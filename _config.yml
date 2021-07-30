@@ -62,13 +62,19 @@ plugins:
 # Google Analytics
 google_analytics: UA-62399911-1
 
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    tag: '/tag/:name/'
-    category: '/:name/'
+#jekyll-archives:
+#  enabled:
+#    - categories
+#    - tags
+#  layouts:
+#    category: category
+#    tag: tag
+#  permalinks:
+#    tag: '/tag/:name/'
+#    category: '/:name/'
+
+# Archives
+collections:
+  archives:
+    output: true
+    permalink: /archives/:path/
