@@ -1,6 +1,6 @@
 ---
 layout: post
-category : evolution
+category : philosophy
 tags : [people,nature,AI]
 title : Happy birthday Alexander von Humboldt
 ---

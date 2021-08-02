@@ -10,4 +10,6 @@ My research blog runs on [Jekyll](https://jekyllrb.com/) for eight years now. I 
 
 Now eight years later it still works. The math went out of tune, but I just fixed it as instructed [here](https://quuxplusone.github.io/blog/2018/08/05/mathjax-in-jekyll/).
 
+Update: it took 10 hours to fix the template.
+
 Happy blogging!

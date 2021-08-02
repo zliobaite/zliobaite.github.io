@@ -1,0 +1,10 @@
+I"7<p><a href="https://www2.helsinki.fi/en/people/people-finder/tegan-foister-9421865">Tegan Foister</a> asked me one day if we could analyze human evolution via text mining. As a test case I did topic modeling and sentiment analysis on research articles published in the <a href="https://www.journals.elsevier.com/journal-of-human-evolution">Journal of Human Evolution</a> over the last 50 years. The analysis covered 4014 articles.</p>
+
+<p>This post is about the results. I made <a href="/machine-learning/2021/08/02/Human-evolution2.html">a separate post</a> where I put technical instructions on how to do such analysis. The code is available on <a href="https://github.com/zliobaite/text_mining_human_evolution">GitHub</a>.</p>
+
+<h2 id="which-words">Which words?</h2>
+
+<p>First I looked at the frequencies of words. Commonly, very frequent and very rate words are removed from text mining, since usually they are not informative. The words <em>human</em> and <em>evolution</em> would appear in every article simply because they are in the title of the journal. Articles and propositions are typically removed at an early stage as well, since they do not associate with textual content. Punctuation is also usually removed for similar reasons. Sometimes punctuation or articles can carry <a href="https://medium.com/@neuroecology/punctuation-in-novels-8f316d542ec4">interesting signals</a> on their own, but for this analysis I just <a href="/machine-learning/2021/08/02/Human-evolution2.html">removed them</a>.</p>
+
+<p>For starters I visualized 50 most frequent words accross all 4014</p>
+:ET

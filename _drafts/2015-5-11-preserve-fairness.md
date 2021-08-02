@@ -4,7 +4,6 @@ category : fairness
 tags : [review,article,indirect discrimination]
 title : In media -- Ways to preserve fairness when algorithms are making decisions
 ---
-{% include JB/setup %}
 
 Virginia Eubanks in [a recent article in Slate](http://www.slate.com/articles/technology/future_tense/2015/04/the_dangers_of_letting_algorithms_enforce_policy.single.html)[^1]
 discusses problems with "black-box" algorithms making decisions in law enforcement, welfare, and child protection.
