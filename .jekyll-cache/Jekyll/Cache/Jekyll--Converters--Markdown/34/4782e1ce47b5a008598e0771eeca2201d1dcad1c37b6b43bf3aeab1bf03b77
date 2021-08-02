@@ -1,0 +1,86 @@
+I"~<p><a href="https://www2.helsinki.fi/en/people/people-finder/tegan-foister-9421865">Tegan Foister</a> asked me one day if we could analyze human evolution via text mining. As a test case I did topic modeling and sentiment analysis on research articles published in the <a href="https://www.journals.elsevier.com/journal-of-human-evolution">Journal of Human Evolution</a> over the last 50 years. The analysis covered 4014 articles.</p>
+
+<p>This post is about the results. I made <a href="/machine-learning/2021/08/02/Human-evolution2.html">a separate post</a> where I put technical instructions on how to do such analysis. The code is available on <a href="https://github.com/zliobaite/text_mining_human_evolution">GitHub</a>.</p>
+
+<h2 id="which-words">Which words?</h2>
+
+<p>First I looked at the frequencies of words. Commonly, very frequent and very rate words are removed from text mining, since usually they are not informative. The words <em>human</em> and <em>evolution</em> would appear in every article simply because they are in the title of the journal. Articles and propositions are typically removed at an early stage as well, since they do not associate with textual content. Punctuation is also usually removed for similar reasons. Sometimes punctuation or articles can carry <a href="https://medium.com/@neuroecology/punctuation-in-novels-8f316d542ec4">interesting signals</a> on their own, but for this analysis I just <a href="/machine-learning/2021/08/02/Human-evolution2.html">removed them</a>.</p>
+
+<p>For starters, I visualized the most frequent and the rarest words across all the articles. strictly speaking not the most frequent, but almost. I set the upper threshold for the words to occur at 99% of the articles, and the lower threshold at 1%. Here is what came up.</p>
+
+<p><img src="/assets/frequent_words1.png" alt="Frequency threshold 0.99" /></p>
+
+<p><img src="/assets/frequent_words2.png" alt="Frequency threshold 0.01" /></p>
+
+<p>From visual inspection, the cutoffs do not look good enough for analysis. The top words are too generic and too methodology oriented, like  <em>size</em>, <em>primate</em>, <em>type</em>, <em>study</em>, <em>analysis</em>. The bottom words are too outliery, like <em>humanosteology</em> (as one word), <em>concomitantly</em> or <em>ssxampdf</em>.</p>
+
+<p>After some trials and visual inspections I settled for thresholds 0.5 and 0.05. This means that the words to be included in text mining can occur in at most 50% of the articles, and at least 5%. In total xx words remained, the most and the least frequent words were these.</p>
+
+<p><img src="/assets/frequent_words3.png" alt="Frequency threshold 0.99" /></p>
+
+<p><img src="/assets/frequent_words4.png" alt="Frequency threshold 0.01" /></p>
+
+<p>It’s still not ideal, for example, <em>jpg</em> and <em>jpeg</em> could be thought as irrelevant. But since they occur in less than half of the articles, they might as well be informative. For instance, they may be informative of topics that are visually intensive, such as those analyzing morphologies. Anyhow, one has to decide where to cut. One may also make a manual dictionary of words to be removed and go for higher thresholds overall. For this analysis settled with this setup.</p>
+
+<h2 id="topic-modeling">Topic modeling</h2>
+
+<p><a href="https://en.wikipedia.org/wiki/Topic_model">Topic modeling</a> rose into popularity in early 2000s. It is a bit like clustering, but not quite. It captures thematic structure in document collections. Most often topic modeling is used for analyzing textual data, but it has been used elsewhere, for instance, for <a href="https://www.genetics.org/content/155/2/945">analyzing gene sequences</a>. The latter came before text analysis, but text analysis made topic modeling widely popular. It has been used probably in zillions of applications from annotating text news to disambiguation of authorships of the Bible.</p>
+
+<p>The basic topic model for text analysis is called <a href="https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf">Latent Dirichlet Allocation</a>. The model assumes that there is a fixed number of topics to talk about. Each topic prioritizes certain words. The underlying vocabulary is common for all topics, but the frequencies of word usage are not. The topics are modeled as distributions of words, and the documents are modeled as distributions of topics. Fitting the model extracts a number of topics from the corpus and assigns each document to these topics. For example, a document can be assigned 80% to Topic#1, 11% to Topic#2 and 9% to Topic#3.</p>
+
+<p>Naturally, if we ask for a large number of topics, they will be quite specialized, if we ask for a few topics, they will be generic. There are ways to assess model fit, but I did not use them here. I wanted relatively few number of topics such that I can analyze the trends, that is how the popularity of topics has changed over 50 years of operation of the Journal of Human Evolution.</p>
+
+<p>I focused on the Journal of Human Evolution because it had a long history as one of the prime venues for publishing on human evolution, it has published only on human evolution (analyzing a generic journal like Nature, for instance, would carry an extra challenge how to filter out articles that are irrelevant for human evolution research) and also because it was technically easy to get full texts for analysis from Scopus.</p>
+
+<p>After some experimentation I settled on extracting 10 topics. The following topics came up (visualized using <a href="https://amueller.github.io/word_cloud/">WordCloud</a> for Python). The larger the word in the visualization, the more important is the word for the topic. The topics are manually named for easier referencing.</p>
+
+<p><strong>Topic#0: Neanderthals</strong></p>
+
+<p><img src="/assets/topic0.png" alt="Topic0" /></p>
+
+<p><strong>Topic#1: Early human environments</strong></p>
+
+<p><img src="/assets/topic1.png" alt="Topic1" /></p>
+
+<p><strong>Topic#2: Human genetics and genomics</strong></p>
+
+<p><img src="/assets/topic2.png" alt="Topic2" /></p>
+
+<p><strong>Topic#3: Human locomotion</strong></p>
+
+<p><img src="/assets/topic3.png" alt="Topic3" /></p>
+
+<p><strong>Topic#4: Hominin taxonomy</strong></p>
+
+<p><img src="/assets/topic4.png" alt="Topic4" /></p>
+
+<p><strong>Topic#5: Hominin brains</strong></p>
+
+<p><img src="/assets/topic5.png" alt="Topic5" /></p>
+
+<p><strong>Topic#6: Stone tools</strong></p>
+
+<p><img src="/assets/topic6.png" alt="Topic6" /></p>
+
+<p><strong>Topic#7: Hominoid anatomy</strong></p>
+
+<p><img src="/assets/topic7.png" alt="Topic7" /></p>
+
+<p><strong>Topic#8: Hominoid teeth</strong></p>
+
+<p><img src="/assets/topic8.png" alt="Topic8" /></p>
+
+<p><strong>Topic#9: Hominoid behavior</strong></p>
+
+<p><img src="/assets/topic9.png" alt="Topic9" /></p>
+
+<p>Intuitively, the topics make sense and they are distinct. The major lines in human evolution research are captured.</p>
+
+<h2 id="analysis-over-time-and-sentiments">Analysis over time and sentiments</h2>
+
+<p>Next, I looked how the prevalence of those topics in the journal changes over the years. For easier visual analysis I aggregated the results into 5 year bins. Analyzing year by year, or even issue by issue is possible, but the lines then are more jittery.</p>
+
+<p>The visualization below is of the results averaged over all articles within each 5 year bin. The length of the articles is not taken into account, each article contributes equally to the average.</p>
+
+<p><img src="/assets/topics_fractions.png" alt="Topic8" /></p>
+:ET
